@@ -1,0 +1,1717 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Restaurante e Pizzaria em Santos SP | Restaurante Trianon</title>
+<meta name="description" content="Restaurante Trianon, na Ponta da Praia em Santos: frutos do mar, pratos à la carte, pizzas no forno à lenha e mais de 80 rótulos de vinho. Delivery, aplicativo e espaços para eventos.">
+<meta name="theme-color" content="#0c0a08">
+<!-- prévia para o cliente: não indexar no Google (evita conteúdo duplicado com o site oficial). Remover ao publicar no domínio do restaurante. -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Restaurante Trianon · Santos SP">
+<meta property="og:description" content="Frutos do mar, pratos à la carte, pizzas no forno à lenha e mais de 80 rótulos de vinho na Ponta da Praia.">
+<meta property="og:image" content="https://oentenza.github.io/trianon/img/hero-frutos-do-mar.jpg">
+<meta property="og:url" content="https://oentenza.github.io/trianon/">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-frutos-do-mar.jpg">
+<script>
+  document.documentElement.classList.add('js');
+  // sempre começar do topo: restaurar a rolagem no meio de uma seção "presa" (pin) deixava a tela vazia
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (location.hash) { window.__startHash = location.hash; history.replaceState(null, '', location.pathname + location.search); }
+  // failsafe: nunca deixar o preloader preso
+  setTimeout(function(){ document.documentElement.classList.add('is-loaded'); }, 4000);
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Restaurante Trianon",
+  "url": "https://restaurantetrianon.com.br/",
+  "image": "https://restaurantetrianon.com.br/wp-content/uploads/2023/11/ban4-e1699910924968.jpg",
+  "telephone": "+55 13 3261-7202",
+  "servesCuisine": ["Frutos do mar", "Pizza", "À la carte"],
+  "menu": "https://www.restaurantetrianon.com.br/cardapiodigital/cardapio",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. dos Bancários, 109 - Ponta da Praia",
+    "addressLocality": "Santos",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "11:00",
+    "closes": "23:59"
+  }],
+  "sameAs": [
+    "https://www.instagram.com/trianonrestaurante/",
+    "https://www.facebook.com/RestauranteePizzariaTrianon"
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0c0a08;
+  --bg2:#14110d;
+  --bg3:#1c1813;
+  --ink:#f4ecdc;
+  --ink2:rgba(244,236,220,.70);
+  --ink3:rgba(244,236,220,.44);
+  --line:rgba(244,236,220,.13);
+  --gold:#c9a25e;
+  --gold2:#e4c58c;
+  --ember:#ff7a3d;
+  --dark-on-gold:#160f08;
+  --serif:'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --sans:'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --pad:clamp(20px, 5vw, 72px);
+  --ease:cubic-bezier(.2,.7,.1,1);
+  --ease-io:cubic-bezier(.77,0,.18,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scrollbar-gutter:stable}
+html.js:not(.is-loaded){overflow:hidden}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;z-index:9000;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+::selection{background:var(--gold);color:var(--dark-on-gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.wrap{width:100%;max-width:1360px;margin:0 auto;padding:0 var(--pad)}
+.section{position:relative;padding:clamp(96px,11vw,160px) 0}
+.kicker{display:inline-flex;align-items:center;gap:14px;margin:0 0 26px;font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:"";width:30px;height:1px;background:currentColor}
+.h2{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(42px,6.2vw,94px);line-height:.96;letter-spacing:-.012em}
+.h2 em,.hero__title em{font-style:italic;color:var(--gold2)}
+.line{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.line__in{display:block}
+.lead{margin:0;color:var(--ink2);font-size:clamp(16px,1.2vw,18px);max-width:50ch}
+
+/* ---------- buttons ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;height:54px;padding:0 28px;border-radius:999px;font-size:14px;font-weight:600;letter-spacing:.03em;overflow:hidden;isolation:isolate;white-space:nowrap;transition:color .45s var(--ease),border-color .45s var(--ease)}
+.btn::before{content:"";position:absolute;inset:-1px;z-index:-1;border-radius:inherit;transform:translateY(102%);transition:transform .55s var(--ease)}
+.btn:hover::before{transform:translateY(0)}
+.btn svg{width:16px;height:16px;flex:none;transition:transform .45s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn--gold{background:var(--gold);color:var(--dark-on-gold)}
+.btn--gold::before{background:var(--ink)}
+.btn--ghost{border:1px solid rgba(244,236,220,.32);color:var(--ink)}
+.btn--ghost::before{background:var(--ink)}
+.btn--ghost:hover{color:var(--dark-on-gold);border-color:var(--ink)}
+.magnetic{transition:translate .4s var(--ease),color .45s var(--ease),border-color .45s var(--ease)}
+.link{display:inline-flex;align-items:center;gap:10px;padding-bottom:6px;font-size:14px;font-weight:600;letter-spacing:.04em;background:linear-gradient(var(--gold),var(--gold)) left bottom/100% 1px no-repeat;transition:background-size .5s var(--ease),color .3s}
+.link:hover{color:var(--gold2);background-size:40% 1px}
+.link svg{width:15px;height:15px;transition:transform .45s var(--ease)}
+.link:hover svg{transform:translateX(5px)}
+
+/* ---------- preloader ---------- */
+.loader{display:none}
+.js .loader{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;background:var(--bg);transition:transform 1s var(--ease-io),visibility 0s 1s}
+.is-loaded .loader{transform:translateY(-100%);visibility:hidden}
+.loader__in{display:grid;justify-items:center;gap:26px;transition:opacity .5s,transform 1s var(--ease-io)}
+.is-loaded .loader__in{opacity:0;transform:translateY(-60px)}
+.loader__logo{width:min(280px,62vw);height:auto;clip-path:inset(0 50% 0 50%);animation:logoIn 1.1s var(--ease) .15s forwards}
+.loader__bar{width:min(280px,62vw);height:1px;background:var(--line);overflow:hidden}
+.loader__bar span{display:block;height:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;animation:barIn 1.2s var(--ease-io) .1s forwards}
+@keyframes logoIn{to{clip-path:inset(0 0 0 0)}}
+@keyframes barIn{to{transform:scaleX(1)}}
+
+/* ---------- progress + cursor ---------- */
+.progress{position:fixed;top:0;left:0;right:0;height:2px;z-index:200;background:linear-gradient(90deg,var(--gold),var(--ember));transform:scaleX(0);transform-origin:left;pointer-events:none}
+.cursor{display:none}
+.has-cursor .cursor{position:fixed;left:0;top:0;z-index:9500;display:grid;place-items:center;width:0;height:0;pointer-events:none;opacity:0;transition:opacity .3s}
+.has-cursor .cursor.is-visible{opacity:1}
+.cursor__ring{position:absolute;display:grid;place-items:center;width:36px;height:36px;border:1px solid rgba(244,236,220,.45);border-radius:50%;transform:translate(-50%,-50%);left:0;top:0;transition:width .4s var(--ease),height .4s var(--ease),background .4s,border-color .4s}
+.cursor__ring span{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dark-on-gold);opacity:0;transition:opacity .25s}
+.cursor.is-hover .cursor__ring{width:62px;height:62px;border-color:var(--gold);background:rgba(201,162,94,.12)}
+.cursor.has-label .cursor__ring{width:86px;height:86px;border-color:var(--gold);background:var(--gold)}
+.cursor.has-label .cursor__ring span{opacity:1}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:120;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px var(--pad);border-bottom:1px solid transparent;transition:transform .6s var(--ease),background .4s,padding .4s,border-color .4s}
+.nav.is-scrolled{padding-top:12px;padding-bottom:12px;background:rgba(12,10,8,.74);-webkit-backdrop-filter:blur(16px) saturate(140%);backdrop-filter:blur(16px) saturate(140%);border-color:var(--line)}
+.nav.is-hidden{transform:translateY(-105%)}
+.nav__spacer{flex:none;width:105px;height:48px}
+.brand{position:fixed;top:19px;left:var(--pad);z-index:121;display:block;transition:transform .6s var(--ease),top .4s}
+.nav-scrolled .brand{top:11px}
+.nav-hidden .brand{transform:translateY(-150%)}
+.menu-open .brand{transform:none}
+.logo{display:block;height:48px;width:auto;aspect-ratio:1973/903}
+.nav__links{display:flex;gap:32px;font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.nav__links a{position:relative;padding:6px 0;color:var(--ink2);transition:color .3s}
+.nav__links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav__links a:hover,.nav__links a.is-active{color:var(--ink)}
+.nav__links a:hover::after,.nav__links a.is-active::after{transform:scaleX(1);transform-origin:left}
+.nav__right{display:flex;align-items:center;gap:18px}
+.nav__phone{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--ink2);transition:color .3s}
+.nav__phone:hover{color:var(--gold2)}
+.nav__phone svg{width:16px;height:16px}
+.nav .btn{height:46px;padding:0 22px}
+.burger{display:none;position:relative;width:46px;height:46px;border:1px solid var(--line);border-radius:50%}
+.burger span{position:absolute;left:14px;right:14px;height:1.5px;background:var(--ink);transition:transform .45s var(--ease),top .45s var(--ease)}
+.burger span:nth-child(1){top:18px}
+.burger span:nth-child(2){top:26px}
+.menu-open .burger span:nth-child(1){top:22px;transform:rotate(45deg)}
+.menu-open .burger span:nth-child(2){top:22px;transform:rotate(-45deg)}
+
+.mmenu{position:fixed;inset:0;z-index:110;display:flex;flex-direction:column;justify-content:center;gap:40px;padding:110px var(--pad) 40px;background:var(--bg2);clip-path:circle(0% at calc(100% - var(--pad) - 23px) 43px);visibility:hidden;transition:clip-path .9s var(--ease-io),visibility 0s .9s}
+.menu-open .mmenu{clip-path:circle(150% at calc(100% - var(--pad) - 23px) 43px);visibility:visible;transition:clip-path .9s var(--ease-io),visibility 0s 0s}
+.mmenu nav a{display:block;font-family:var(--serif);font-size:clamp(40px,11vw,68px);line-height:1.12;opacity:0;transform:translateY(40px);transition:opacity .6s var(--ease),transform .8s var(--ease),color .3s}
+.mmenu nav a:hover{color:var(--gold2)}
+.mmenu nav a em{font-size:.42em;font-style:normal;font-family:var(--sans);color:var(--gold);vertical-align:super;margin-right:12px;letter-spacing:.1em}
+.menu-open .mmenu nav a{opacity:1;transform:none;transition-delay:calc(.25s + var(--i) * .06s)}
+.mmenu__foot{display:flex;flex-wrap:wrap;gap:12px;opacity:0;transition:opacity .6s .6s}
+.menu-open .mmenu__foot{opacity:1}
+
+/* ---------- hero ---------- */
+.hero{position:relative;display:flex;align-items:flex-end;height:100vh;height:100svh;min-height:660px;overflow:hidden;isolation:isolate}
+.hero__media{position:absolute;inset:-5%;z-index:-3}
+.hero__pan{position:absolute;inset:0;will-change:transform}
+.hero__slide{position:absolute;inset:0;background:var(--img) center/cover no-repeat;opacity:0;transform:scale(1.14);transition:opacity 1.8s ease,transform 9s linear}
+.hero__slide.is-active{opacity:1;transform:scale(1)}
+html:not(.js) .hero__slide:first-child{opacity:1;transform:none}
+.hero__shade{position:absolute;inset:0;z-index:-2;background:
+  linear-gradient(180deg,rgba(12,10,8,.7) 0%,rgba(12,10,8,.12) 26%,rgba(12,10,8,.3) 55%,rgba(12,10,8,.96) 100%),
+  radial-gradient(110% 90% at 0% 100%,rgba(12,10,8,.9) 0%,rgba(12,10,8,0) 62%)}
+.embers{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero .embers{z-index:-1}
+.hero__content{position:relative;width:100%;max-width:1360px;margin:0 auto;padding:0 var(--pad) clamp(132px,17vh,180px)}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;margin:0 0 26px;font-size:12px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--ink2)}
+.eyebrow svg{width:14px;height:14px;color:var(--gold)}
+.hero__title{margin:0 0 34px;font-family:var(--serif);font-weight:500;font-size:clamp(46px,9.4vw,152px);line-height:.9;letter-spacing:-.018em}
+.hero__row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px 48px}
+.hero__lead{margin:0;max-width:46ch;color:var(--ink2);font-size:clamp(16px,1.25vw,19px)}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:12px}
+.js .hero .line__in{transform:translateY(112%)}
+.js .hero .fade{opacity:0;transform:translateY(24px)}
+.is-loaded .hero .line__in{transform:none;transition:transform 1.3s var(--ease) calc(.15s + var(--i,0) * .11s)}
+.is-loaded .hero .fade{opacity:1;transform:none;transition:opacity 1.2s ease calc(.55s + var(--i,0) * .1s),transform 1.2s var(--ease) calc(.55s + var(--i,0) * .1s)}
+.hero__foot{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1360px;margin:0 auto;padding:0 var(--pad) 30px}
+.hero__tabs{display:flex;gap:26px}
+.hero__tab{display:grid;gap:10px;min-width:128px;text-align:left;font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink3);transition:color .4s}
+.hero__tab b{color:var(--gold);font-weight:600;margin-right:8px}
+.hero__tab.is-active,.hero__tab:hover{color:var(--ink)}
+.hero__tab i{position:relative;display:block;height:1px;background:var(--line);overflow:hidden}
+.hero__tab i::after{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:left}
+.hero__tab.is-active i::after{animation:tabFill 6.5s linear forwards}
+@keyframes tabFill{to{transform:scaleX(1)}}
+.hero__meta{display:flex;align-items:center;gap:22px}
+.status{display:inline-flex;align-items:center;gap:10px;padding:9px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(12,10,8,.45);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-size:13px;color:var(--ink2)}
+.status i{flex:none;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.status.is-open i{background:#5fd38d;animation:pulse 2.2s infinite}
+.status.is-closed i{background:#e46b5d}
+.status b{font-weight:700;color:var(--ink)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(95,211,141,.55)}80%,100%{box-shadow:0 0 0 10px rgba(95,211,141,0)}}
+.scrollcue{display:flex;align-items:center;gap:12px;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ink3)}
+.scrollcue span{position:relative;width:1px;height:46px;background:var(--line);overflow:hidden}
+.scrollcue span::after{content:"";position:absolute;left:0;top:-40%;width:100%;height:40%;background:var(--gold);animation:drip 2s var(--ease-io) infinite}
+@keyframes drip{to{top:110%}}
+
+/* ---------- marquee ---------- */
+.marquee{position:relative;padding:clamp(34px,5vw,70px) 0;border-block:1px solid var(--line);overflow:hidden}
+.marquee__row{display:flex;width:max-content}
+.marquee__track{display:flex;width:max-content;will-change:transform}
+.marquee__item{display:inline-flex;align-items:center;gap:clamp(22px,3vw,46px);padding-right:clamp(22px,3vw,46px);font-family:var(--serif);font-weight:500;font-size:clamp(42px,7vw,112px);line-height:1.08;white-space:nowrap}
+.marquee__item svg{width:.34em;height:.34em;color:var(--gold);flex:none}
+.marquee__row--outline .marquee__item{font-style:italic;color:transparent;-webkit-text-stroke:1px rgba(244,236,220,.38)}
+.marquee__row--outline .marquee__item svg{color:var(--ember)}
+
+/* ---------- reveal images ---------- */
+.rimg{position:relative;margin:0;overflow:hidden;border-radius:4px;background:var(--bg3)}
+.rimg img{position:absolute;left:0;top:-7%;width:100%;height:114%;max-width:none;object-fit:cover}
+
+/* ---------- about ---------- */
+.about__grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(48px,7vw,120px);align-items:center}
+.about__statement{margin:0 0 34px;font-family:var(--serif);font-weight:500;font-size:clamp(30px,3.5vw,54px);line-height:1.1}
+.about__statement em{font-style:italic;color:var(--gold2)}
+.about__body{margin:0 0 38px;color:var(--ink2);max-width:52ch}
+.about__media{position:relative;padding-bottom:12%}
+.about__img1{width:80%;aspect-ratio:4/5;margin-left:auto}
+.about__img2{position:absolute;left:0;bottom:0;width:46%;aspect-ratio:1;outline:10px solid var(--bg)}
+.badge{position:absolute;top:-56px;left:8%;width:142px;height:142px;border-radius:50%;background:var(--gold);color:var(--dark-on-gold);display:grid;place-items:center}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
+.badge text{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.06em;fill:currentColor}
+.badge__core{font-family:var(--serif);font-size:34px;line-height:1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(90px,10vw,150px);border-top:1px solid var(--line)}
+.stat{padding:34px 28px 6px 0}
+.stat+.stat{padding-left:28px;border-left:1px solid var(--line)}
+.stat__num{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(56px,6vw,96px);line-height:1}
+.stat__num small{font-size:.5em;color:var(--gold);margin-left:2px}
+.stat__num .pre{color:var(--gold)}
+.stat__label{display:block;margin-top:12px;max-width:24ch;font-size:14px;color:var(--ink2)}
+
+/* ---------- menu highlights ---------- */
+.menu{background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+.sec-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:30px 60px;margin-bottom:clamp(50px,6vw,90px)}
+.menu__list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.menu__item a{position:relative;display:grid;grid-template-columns:70px 1fr 58px;align-items:center;gap:0 24px;padding:clamp(22px,2.4vw,34px) 0;border-bottom:1px solid var(--line)}
+.menu__item a::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(201,162,94,.09),rgba(201,162,94,0) 65%);opacity:0;transition:opacity .5s}
+.menu__item a:hover::before{opacity:1}
+.menu__n{font-size:12px;font-weight:600;letter-spacing:.16em;color:var(--ink3)}
+.menu__thumb{display:none}
+.menu__txt{display:flex;align-items:center;justify-content:space-between;gap:24px;min-width:0}
+.menu__name{font-family:var(--serif);font-weight:500;font-size:clamp(32px,4.6vw,70px);line-height:1;transition:transform .7s var(--ease),color .4s,opacity .4s}
+.menu__tag{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);text-align:right;transition:color .4s}
+.menu__go{display:grid;place-items:center;width:56px;height:56px;border:1px solid var(--line);border-radius:50%;transition:background .45s var(--ease),border-color .45s,color .45s}
+.menu__go svg{width:18px;height:18px;transform:rotate(-45deg);transition:transform .5s var(--ease)}
+.menu__item a:hover .menu__name{transform:translateX(22px);color:var(--gold2)}
+.menu__item a:hover .menu__tag{color:var(--ink2)}
+.menu__item a:hover .menu__go{background:var(--gold);border-color:var(--gold);color:var(--dark-on-gold)}
+.menu__item a:hover .menu__go svg{transform:rotate(0)}
+@media (hover:hover){.menu__list:hover .menu__item a:not(:hover) .menu__name{opacity:.32}}
+.menu__float{position:fixed;left:0;top:0;z-index:60;width:clamp(240px,21vw,330px);aspect-ratio:4/5;pointer-events:none;opacity:0;transition:opacity .35s}
+.menu__float.is-on{opacity:1}
+.menu__float-in{position:absolute;inset:0;overflow:hidden;border-radius:6px;transform:scale(.4);transition:transform .6s var(--ease);box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.menu__float.is-on .menu__float-in{transform:scale(1)}
+.menu__float img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(100% 0 0 0);transition:clip-path .7s var(--ease)}
+.menu__float img.is-active{z-index:2;clip-path:inset(0 0 0 0)}
+.menu__float img.was-active{z-index:1;clip-path:inset(0 0 0 0)}
+.menu__cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:50px}
+.menu__cta p{margin:0;color:var(--ink2);font-size:15px}
+
+/* ---------- pizza ---------- */
+.pizza{position:relative;overflow:hidden;background:radial-gradient(55% 60% at 28% 50%,rgba(255,122,61,.11),rgba(255,122,61,0) 70%),var(--bg2)}
+.pizza .embers{z-index:0;opacity:.8}
+.pizza__inner{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr 1fr;grid-template-areas:"stage head" "stage pillars" "stage picker";align-content:center;align-items:start;column-gap:clamp(30px,6vw,100px);min-height:100vh;min-height:100svh;padding-top:clamp(80px,11vh,130px);padding-bottom:clamp(40px,7vh,90px)}
+.pizza .h2{font-size:clamp(40px,min(5.2vw,8.4vh),82px)}
+.pizza__fire{position:absolute;inset:0;z-index:0;background:url('img/forno-a-lenha.jpg') 30% 55%/cover no-repeat;opacity:.14;pointer-events:none;
+  -webkit-mask-image:radial-gradient(55% 70% at 28% 55%,#000 0%,transparent 78%);mask-image:radial-gradient(55% 70% at 28% 55%,#000 0%,transparent 78%)}
+.pizza__head{grid-area:head}
+.pizza__picker{grid-area:picker}
+.pizza__stage{grid-area:stage;align-self:center;position:relative;width:100%;max-width:min(640px,74vh);aspect-ratio:1;justify-self:center;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.pizza__stage:active{cursor:grabbing}
+.pizza__glow{position:absolute;inset:4%;border-radius:50%;background:radial-gradient(circle closest-side,rgba(255,122,61,.38),rgba(255,122,61,.12) 55%,rgba(255,122,61,0));animation:breathe 4.5s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.08);opacity:.75}}
+.pizza__ring{position:absolute;inset:0;animation:spin 46s linear infinite reverse}
+.pizza__ring text{font-family:var(--sans);font-size:12.5px;font-weight:700;letter-spacing:.2em;fill:var(--ink3)}
+.pizza__tilt{position:absolute;inset:0;transition:transform .5s var(--ease)}
+.pizza__shadow{position:absolute;left:14%;right:14%;top:58%;height:20%;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.7),rgba(0,0,0,.35) 55%,rgba(0,0,0,0))}
+/* "prato giratório": um quadrado achatado em scaleY (= ângulo da foto); dentro dele cada foto é esticada até virar um disco */
+.pizza__plate{position:absolute;left:9%;top:9%;width:82%;height:82%;transform:scaleY(.693)}
+.pizza__drag,.pizza__spin,.pizza__layer{position:absolute;inset:0}
+.pizza__layer{opacity:0;visibility:hidden}
+.pizza__layer.is-active{opacity:1;visibility:visible}
+.pizza__layer img{position:absolute;left:var(--l);top:var(--t);width:var(--w);height:var(--h);max-width:none;pointer-events:none}
+.pizza__layer--photo{-webkit-mask-image:radial-gradient(circle closest-side,#000 96.5%,transparent 100%);mask-image:radial-gradient(circle closest-side,#000 96.5%,transparent 100%)}
+.pizza__tag{position:absolute;right:-4%;top:4%;display:flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(20,17,13,.88);font-size:12.5px;font-weight:600;letter-spacing:.04em}
+.pizza__tag i{width:7px;height:7px;border-radius:50%;background:var(--ember);box-shadow:0 0 14px var(--ember)}
+.pizza__hint{position:absolute;left:50%;bottom:-6%;transform:translateX(-50%);font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink3);white-space:nowrap}
+.pizza__head .lead{margin-top:22px}
+.pillars{grid-area:pillars;display:grid;grid-template-columns:repeat(3,1fr);gap:0 22px;list-style:none;margin:30px 0 0;padding:0;border-top:1px solid var(--line)}
+.pillar{padding:18px 0 0;transition:opacity .6s}
+.js .pillar{opacity:.28}
+.js .pillar.is-on{opacity:1}
+.pillar span{display:block;margin-bottom:8px;font-size:11px;font-weight:600;letter-spacing:.16em;color:var(--gold)}
+.pillar h3{margin:0 0 6px;font-family:var(--serif);font-weight:500;font-size:clamp(20px,1.65vw,25px);line-height:1.1}
+.pillar p{margin:0;font-size:13.5px;line-height:1.45;color:var(--ink2)}
+.chips__label{margin:32px 0 12px;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--ink3)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;font-weight:500;color:var(--ink2);transition:border-color .35s,color .35s,background .35s}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;opacity:.35;transition:opacity .35s,box-shadow .35s}
+.chip:hover{border-color:var(--gold);color:var(--ink);background:rgba(201,162,94,.08)}
+.chip[aria-pressed="true"]{border-color:var(--gold);background:var(--gold);color:var(--dark-on-gold)}
+.chip[aria-pressed="true"]::before{opacity:1;background:var(--ember);box-shadow:0 0 10px var(--ember)}
+.flavor{min-height:4.6em;margin:0 0 30px;font-size:15px;color:var(--ink2)}
+.flavor b{font-weight:700;color:var(--ink)}
+.flavor em{font-style:normal;margin-left:8px;padding:2px 9px;border:1px solid rgba(201,162,94,.4);border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);vertical-align:2px}
+
+/* ---------- space (horizontal) ---------- */
+.space{position:relative;overflow:hidden}
+.space__pin{display:flex;flex-direction:column;justify-content:center;min-height:100vh;padding:clamp(84px,11vh,130px) 0 clamp(36px,6vh,70px)}
+.space .h2{font-size:clamp(42px,min(6.2vw,8.6vh),94px)}
+.space__head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px 60px;margin-bottom:clamp(28px,4.5vh,56px)}
+.space__head .lead{max-width:38ch}
+.space__track{display:flex;gap:clamp(16px,2vw,28px);padding:0 var(--pad);width:max-content;will-change:transform}
+.space__card{margin:0;flex:none}
+.space__card .rimg{height:clamp(240px,46vh,560px);aspect-ratio:4/5}
+.space__card .rimg img{left:-8%;width:116%;top:0;height:100%}
+.space__card:nth-child(3n+1) .rimg{aspect-ratio:5/4}
+.space__card figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-top:16px;border-top:1px solid var(--line);margin-top:16px}
+.space__card figcaption b{font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.2vw,32px)}
+.space__card figcaption span{font-size:12px;font-weight:600;letter-spacing:.16em;color:var(--ink3)}
+.space__bar{height:1px;margin:clamp(36px,4vw,56px) var(--pad) 0;background:var(--line);overflow:hidden}
+.space__bar span{display:block;height:100%;background:var(--gold);transform:scaleX(0);transform-origin:left}
+
+/* ---------- events ---------- */
+.events{background:var(--bg2)}
+.events__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,120px);align-items:center}
+.events__copy .lead{margin-top:26px}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:18px 26px;list-style:none;margin:40px 0 44px;padding:0}
+.features li{display:flex;align-items:center;gap:14px;font-size:15px;color:var(--ink2)}
+.features svg{flex:none;width:40px;height:40px;padding:10px;border:1px solid var(--line);border-radius:50%;color:var(--gold)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.viz{position:relative;padding:clamp(26px,3vw,44px);border:1px solid var(--line);border-radius:6px;background:linear-gradient(160deg,rgba(201,162,94,.07),rgba(201,162,94,0) 45%),var(--bg)}
+.seg{position:relative;display:inline-grid;grid-template-columns:1fr 1fr;padding:5px;border:1px solid var(--line);border-radius:999px}
+.seg__pill{position:absolute;top:5px;bottom:5px;left:5px;width:calc(50% - 5px);border-radius:999px;background:var(--gold);transition:transform .6s var(--ease)}
+.seg[data-active="1"] .seg__pill{transform:translateX(100%)}
+.seg button{position:relative;z-index:1;padding:11px 22px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--ink2);transition:color .4s;white-space:nowrap}
+.seg button[aria-selected="true"]{color:var(--dark-on-gold)}
+.viz__count{display:flex;align-items:baseline;gap:14px;margin:30px 0 24px}
+.viz__num{font-family:var(--serif);font-weight:500;font-size:clamp(76px,9vw,132px);line-height:.85;font-variant-numeric:tabular-nums}
+.viz__label{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink2)}
+.dots{display:grid;grid-template-columns:repeat(25,1fr);gap:clamp(4px,.55vw,7px)}
+.dots i{aspect-ratio:1;border-radius:50%;background:rgba(244,236,220,.1);transform:scale(.7);transition:background .4s,transform .5s var(--ease),box-shadow .4s}
+.dots i.on{background:var(--gold);transform:scale(1);box-shadow:0 0 10px rgba(201,162,94,.35)}
+.viz__note{margin:20px 0 0;font-size:13px;color:var(--ink3)}
+
+/* ---------- app + loyalty ---------- */
+.app__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,7vw,120px);align-items:center}
+.app__copy .lead{margin-top:26px}
+.app__copy .lead b{color:var(--gold2);font-weight:700}
+.stores{display:flex;flex-wrap:wrap;gap:12px;margin:38px 0 26px}
+.stores a{display:block;border-radius:10px;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s}
+.stores a:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.45)}
+.stores img{height:52px;width:auto}
+.loyalty{position:relative}
+.card{position:relative;padding:clamp(26px,3vw,40px);border-radius:22px;overflow:hidden;background:
+  radial-gradient(120% 90% at 100% 0%,rgba(228,197,140,.22),rgba(228,197,140,0) 55%),
+  linear-gradient(150deg,#2a2218 0%,#17130e 55%,#0f0c09 100%);
+  border:1px solid rgba(228,197,140,.25);box-shadow:0 40px 90px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.06);transform-style:preserve-3d;transition:transform .5s var(--ease)}
+.card::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(400px circle at var(--gx,50%) var(--gy,0%),rgba(255,255,255,.09),transparent 45%)}
+.card__top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.card__top .logo{height:34px}
+.card__top span{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.card__body{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:clamp(20px,3vw,36px);margin:30px 0 26px}
+.ring{position:relative;width:clamp(124px,12vw,150px);aspect-ratio:1}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:6}
+.ring .track{stroke:rgba(244,236,220,.1)}
+.ring .bar{stroke:url(#gold);stroke-linecap:round;stroke-dasharray:326.73;stroke-dashoffset:326.73;transition:stroke-dashoffset 1s var(--ease)}
+.ring__val{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.ring__val b{font-family:var(--serif);font-weight:500;font-size:clamp(40px,4vw,52px);line-height:.9;font-variant-numeric:tabular-nums}
+.ring__val span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+.slots{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.slot{position:relative;aspect-ratio:1;border:1px dashed rgba(228,197,140,.35);border-radius:50%;overflow:hidden}
+.slot::after{content:"";position:absolute;inset:3px;border-radius:50%;background:conic-gradient(var(--gold2) calc(var(--f,0) * 360deg),transparent 0);transition:--f .6s}
+.slot svg{position:absolute;inset:22%;width:56%;height:56%;z-index:1;color:var(--dark-on-gold);opacity:0;transition:opacity .4s}
+.slot.full svg{opacity:1}
+.card__rules{margin:0 0 22px;font-size:13px;color:var(--ink2)}
+.card__actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card__actions button{display:grid;gap:2px;padding:14px 16px;border:1px solid rgba(228,197,140,.3);border-radius:14px;text-align:left;font-size:14px;font-weight:700;transition:background .35s,border-color .35s,transform .2s}
+.card__actions button small{font-size:12px;font-weight:500;color:var(--ink3)}
+.card__actions button:hover{background:rgba(201,162,94,.12);border-color:var(--gold)}
+.card__actions button:active{transform:scale(.97)}
+.card__actions button[disabled]{opacity:.35;pointer-events:none}
+.card__msg{min-height:44px;margin:18px 0 0;font-size:14px;color:var(--ink2)}
+.card__msg b{color:var(--gold2)}
+.card__reset{display:none;margin-top:6px;font-size:13px;font-weight:600;color:var(--gold2);text-decoration:underline;text-underline-offset:4px}
+.card.is-done .card__reset{display:inline-block}
+.confetti{position:absolute;left:50%;top:40%;z-index:5;pointer-events:none;font-size:22px;line-height:1}
+.badge--app{top:auto;bottom:-46px;left:auto;right:-30px;width:132px;height:132px;background:var(--ember);color:#1a0b04;z-index:3}
+.badge--app .badge__core{font-family:var(--sans);font-weight:800;font-size:26px}
+
+/* ---------- reviews ---------- */
+.reviews__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(48px,7vw,120px);align-items:center}
+.reviews__copy .lead{margin:26px 0 36px}
+.deck{position:relative;height:clamp(330px,30vw,380px);touch-action:pan-y}
+.quote{position:absolute;inset:0;margin:0;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(28px,3.4vw,48px);border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,var(--bg3),var(--bg2));box-shadow:0 30px 70px rgba(0,0,0,.45);transition:transform .7s var(--ease),opacity .6s;cursor:grab;user-select:none;-webkit-user-select:none}
+.quote:active{cursor:grabbing}
+.quote__mark{font-family:var(--serif);font-size:110px;line-height:.6;height:44px;color:var(--gold)}
+.quote p{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(23px,2.25vw,32px);line-height:1.22}
+.quote footer{display:flex;align-items:center;gap:14px;font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.quote footer i{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--gold);color:var(--dark-on-gold);font-style:normal;font-family:var(--serif);font-size:20px;letter-spacing:0}
+.deck__ctrl{display:flex;align-items:center;gap:14px;margin-top:clamp(40px,4vw,56px)}
+.deck__ctrl button{display:grid;place-items:center;width:52px;height:52px;border:1px solid var(--line);border-radius:50%;transition:background .4s,border-color .4s,color .4s}
+.deck__ctrl button:hover{background:var(--gold);border-color:var(--gold);color:var(--dark-on-gold)}
+.deck__ctrl svg{width:18px;height:18px}
+.deck__count{margin-left:8px;font-size:13px;font-weight:600;letter-spacing:.14em;color:var(--ink3);font-variant-numeric:tabular-nums}
+
+/* ---------- instagram ---------- */
+.insta{background:var(--bg2)}
+.insta__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,1vw,14px)}
+.post{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;border-radius:6px;background:var(--bg3)}
+.post img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),filter .6s}
+.post__over{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:18px;background:linear-gradient(180deg,rgba(12,10,8,0) 30%,rgba(12,10,8,.92));opacity:0;transition:opacity .5s}
+.post__over p{margin:0;font-size:14px;line-height:1.45;transform:translateY(14px);transition:transform .6s var(--ease)}
+.post__over svg{width:22px;height:22px;color:var(--gold2)}
+.post:hover img{transform:scale(1.08);filter:saturate(1.15)}
+.post:hover .post__over,.post:focus-visible .post__over{opacity:1}
+.post:hover .post__over p{transform:none}
+
+/* ---------- visit ---------- */
+.visit__grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(48px,6vw,100px);align-items:stretch}
+.addr{display:flex;align-items:flex-start;gap:14px;margin:30px 0 0;font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.2vw,32px);line-height:1.2}
+.addr svg{flex:none;width:26px;height:26px;margin-top:4px;color:var(--gold)}
+.hours{margin:40px 0 34px}
+.hours .status{margin-bottom:22px}
+.week{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.week li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--ink2)}
+.week li.is-today{color:var(--ink);font-weight:700}
+.week li.is-today span:first-child::after{content:"hoje";margin-left:10px;padding:2px 8px;border-radius:999px;background:var(--gold);color:var(--dark-on-gold);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;vertical-align:2px}
+.contacts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:30px}
+.contacts a{display:grid;gap:2px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;transition:border-color .35s,background .35s}
+.contacts a:hover{border-color:var(--gold);background:rgba(201,162,94,.06)}
+.contacts small{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.contacts b{font-size:18px;font-weight:600}
+.map{position:relative;min-height:440px;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:var(--bg3)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:invert(92%) hue-rotate(180deg) saturate(.35) brightness(.95) contrast(.95)}
+.map__pin{position:absolute;left:50%;top:50%;z-index:2;pointer-events:none;transform:translate(-50%,-100%)}
+.map__pin span{display:block;width:22px;height:22px;border-radius:50% 50% 50% 0;background:var(--gold);transform:rotate(-45deg);box-shadow:0 0 0 6px rgba(201,162,94,.25)}
+
+/* ---------- footer ---------- */
+.foot{position:relative;padding:clamp(80px,9vw,130px) 0 30px;border-top:1px solid var(--line);overflow:hidden}
+.foot__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+.foot h4{margin:0 0 18px;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.foot li a,.foot p{color:var(--ink2);font-size:15px;transition:color .3s}
+.foot li a:hover{color:var(--ink)}
+.foot p{margin:18px 0 0;max-width:34ch}
+.foot__word{margin:clamp(60px,8vw,110px) 0 0;font-family:var(--serif);font-weight:500;font-size:clamp(80px,21vw,330px);line-height:.78;letter-spacing:-.03em;text-align:center;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(244,236,220,.22);
+  background:linear-gradient(90deg,var(--gold) 0 50%,transparent 50% 100%) 100% 0/200% 100% no-repeat;-webkit-background-clip:text;background-clip:text;user-select:none}
+.foot__bar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}
+.foot__bar a:hover{color:var(--ink)}
+.social{display:flex;gap:10px;margin-top:22px}
+.social a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;transition:background .35s,border-color .35s,color .35s}
+.social a:hover{background:var(--gold);border-color:var(--gold);color:var(--dark-on-gold)}
+.social svg{width:18px;height:18px}
+
+/* ---------- fab ---------- */
+.fab{position:fixed;right:clamp(16px,2.4vw,30px);bottom:clamp(16px,2.4vw,30px);z-index:80;display:flex;align-items:center;gap:0;height:60px;padding:0 18px;border-radius:999px;background:#25d366;color:#05210f;box-shadow:0 14px 34px rgba(0,0,0,.45);transition:gap .5s var(--ease),transform .5s var(--ease),opacity .5s}
+.fab svg{width:26px;height:26px;flex:none}
+.fab span{max-width:0;overflow:hidden;white-space:nowrap;font-size:14px;font-weight:700;transition:max-width .6s var(--ease)}
+.fab:hover{gap:10px}
+.fab:hover span{max-width:140px}
+.fab::before{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid #25d366;animation:ring 2.4s var(--ease) infinite}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.45);opacity:0}}
+.js .fab{transform:translateY(140%);opacity:0}
+.js .fab.is-in{transform:none;opacity:1}
+
+/* ---------- responsive ---------- */
+@media (min-width:901px) and (max-height:820px){
+  .pillar p,.pizza__head .lead{display:none}
+}
+@media (max-width:1100px){
+  .nav__links{display:none}
+  .burger{display:block}
+}
+@media (max-width:900px){
+  .about__grid,.pizza__inner,.events__grid,.app__grid,.reviews__grid,.visit__grid{grid-template-columns:1fr}
+  .about__media{max-width:560px;margin-top:40px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line);margin-top:26px}
+  .pizza__inner{min-height:0;grid-template-areas:"head" "stage" "picker" "pillars"}
+  .pizza__stage{margin-top:40px}
+  .pizza__picker{margin-top:30px}
+  .pillars{margin-top:50px}
+  .pizza__stage{max-width:520px}
+  .js .pillar{opacity:1}
+  .menu__item a{grid-template-columns:84px 1fr 46px;gap:0 18px}
+  .menu__n{display:none}
+  .menu__thumb{display:block;width:84px;height:84px;border-radius:6px;object-fit:cover}
+  .menu__txt{flex-direction:column;align-items:flex-start;gap:8px}
+  .menu__tag{text-align:left}
+  .menu__go{width:46px;height:46px}
+  .menu__item a:hover .menu__name{transform:none}
+  .space__track{overflow-x:auto;width:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:10px}
+  .space__track::-webkit-scrollbar{display:none}
+  .space{padding:clamp(96px,11vw,160px) 0}
+  .space__card{scroll-snap-align:center;width:78vw}
+  .space__card .rimg,.space__card:nth-child(3n+1) .rimg{height:auto;width:100%;aspect-ratio:4/5}
+  .space__bar{display:none}
+  .space__pin{min-height:0;padding:0}
+  .loyalty{margin-top:20px}
+  .badge--app{right:-8px;bottom:-56px;width:112px;height:112px}
+  .map{min-height:360px}
+  .foot__grid{grid-template-columns:1fr 1fr}
+  .foot__grid>div:first-child{grid-column:1/-1}
+}
+@media (max-width:640px){
+  .nav__phone{display:none}
+  .nav .btn{height:42px;padding:0 16px;font-size:13px}
+  .logo{height:40px}
+  .nav__spacer{width:88px;height:40px}
+  .brand{top:23px}
+  .nav-scrolled .brand{top:15px}
+  .hero{min-height:620px}
+  .hero__content{padding-bottom:150px}
+  .hero__ctas .btn{flex:1 1 auto}
+  .hero__tabs{gap:14px}
+  .hero__tab{min-width:0;width:54px}
+  .hero__tab .t{display:none}
+  .scrollcue{display:none}
+  .badge{width:112px;height:112px;top:-40px}
+  .badge__core{font-size:28px}
+  .features{grid-template-columns:1fr}
+  .card__body{grid-template-columns:1fr;justify-items:center}
+  .slots{width:100%}
+  .insta__grid{grid-template-columns:1fr 1fr}
+  .contacts{grid-template-columns:1fr}
+  .deck{height:380px}
+  .seg button{padding:10px 14px;font-size:12px}
+  .pillars{grid-template-columns:1fr}
+  .pillar{display:grid;grid-template-columns:44px 1fr;gap:2px 8px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .pillar span{grid-row:span 2;margin:4px 0 0}
+}
+@media (max-width:359px){ .nav .btn{display:none} }
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;transition-delay:0s!important;scroll-behavior:auto!important}
+  .js .pillar{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4c58c"/><stop offset="1" stop-color="#ff7a3d"/></linearGradient>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0z" fill="currentColor"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.2 21.8l4.9-1.3A9.8 9.8 0 1 0 12 2.2zm0 17.9a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8.1 8.1 0 1 1 12 20.1zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z" fill="currentColor"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8.5V6.8c0-.8.5-1.3 1.3-1.3H17V2.3h-2.6C11.7 2.3 10.4 4 10.4 6.3v2.2H8v3.3h2.4v9.9H14v-9.9h2.6l.5-3.3z" fill="currentColor"/></symbol>
+    <symbol id="i-slice" viewBox="0 0 24 24"><path d="M12 2 3 20c6 3 12 3 18 0z" fill="currentColor"/><circle cx="10" cy="12" r="1.5" fill="#c9a25e"/><circle cx="14" cy="16" r="1.5" fill="#c9a25e"/></symbol>
+  </defs>
+</svg>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader__in">
+    <img class="loader__logo" src="img/logo-trianon-branca.svg" alt="">
+    <div class="loader__bar"><span></span></div>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><div class="cursor__ring"><span></span></div></div>
+
+<!-- ============ NAV ============ -->
+<a class="brand" href="#top" aria-label="Restaurante Trianon — início">
+  <img class="logo" src="img/logo-trianon-branca.svg" alt="Trianon Restaurante e Pizzaria">
+</a>
+<header class="nav" id="nav">
+  <span class="nav__spacer" aria-hidden="true"></span>
+  <nav class="nav__links" aria-label="Principal">
+    <a href="#casa">A Casa</a>
+    <a href="#destaques">Destaques</a>
+    <a href="#pizzas">Pizzas</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#app">App</a>
+    <a href="#visite">Visite</a>
+  </nav>
+  <div class="nav__right">
+    <a class="nav__phone" href="tel:+551332617202"><svg><use href="#i-phone"/></svg>(13) 3261-7202</a>
+    <a class="btn btn--gold magnetic" href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener">Peça online</a>
+    <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu">
+  <nav aria-label="Menu móvel">
+    <a href="#casa" style="--i:0"><em>01</em>A Casa</a>
+    <a href="#destaques" style="--i:1"><em>02</em>Destaques</a>
+    <a href="#pizzas" style="--i:2"><em>03</em>Pizzas</a>
+    <a href="#eventos" style="--i:3"><em>04</em>Eventos</a>
+    <a href="#app" style="--i:4"><em>05</em>App</a>
+    <a href="#visite" style="--i:5"><em>06</em>Visite</a>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="btn btn--gold" href="https://www.restaurantetrianon.com.br/cardapiodigital/cardapio" target="_blank" rel="noopener">Cardápio digital</a>
+    <a class="btn btn--ghost" href="tel:+551332617202">(13) 3261-7202</a>
+  </div>
+</div>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__media" aria-hidden="true">
+    <div class="hero__pan">
+      <div class="hero__slide" style="--img:url('img/hero-frutos-do-mar.jpg')"></div>
+      <div class="hero__slide" style="--img:url('img/hero-pizza.jpg')"></div>
+      <div class="hero__slide" style="--img:url('img/hero-a-la-carte.jpg')"></div>
+    </div>
+  </div>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <canvas class="embers" data-embers="hero" aria-hidden="true"></canvas>
+
+  <div class="hero__content">
+    <p class="eyebrow fade" style="--i:0"><svg><use href="#i-pin"/></svg>Ponta da Praia · Santos — SP</p>
+    <h1 class="hero__title">
+      <span class="line"><span class="line__in" style="--i:0">Sabores do mar,</span></span>
+      <span class="line"><span class="line__in" style="--i:1"><em>tradição</em> no forno</span></span>
+      <span class="line"><span class="line__in" style="--i:2">à lenha.</span></span>
+    </h1>
+    <div class="hero__row">
+      <p class="hero__lead fade" style="--i:1">Frutos do mar, pratos à la carte, pizzas e uma carta com cerca de 80 rótulos de vinho — numa casa ampla, feita para receber bem.</p>
+      <div class="hero__ctas fade" style="--i:2">
+        <a class="btn btn--gold magnetic" href="https://www.restaurantetrianon.com.br/cardapiodigital/cardapio" target="_blank" rel="noopener">Ver cardápio <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost magnetic" href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener">Pedir delivery</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__foot">
+    <div class="hero__tabs fade" style="--i:3" role="tablist" aria-label="Destaques da casa">
+      <button class="hero__tab" role="tab"><span><b>01</b><span class="t">Frutos do mar</span></span><i></i></button>
+      <button class="hero__tab" role="tab"><span><b>02</b><span class="t">Pizzas</span></span><i></i></button>
+      <button class="hero__tab" role="tab"><span><b>03</b><span class="t">À la carte</span></span><i></i></button>
+    </div>
+    <div class="hero__meta fade" style="--i:4">
+      <span class="status" data-status><i></i><span>Terça a domingo · 11h às 00h</span></span>
+      <span class="scrollcue">Role<span></span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<section class="marquee" aria-label="O que servimos">
+  <div class="marquee__row" data-dir="-1">
+    <div class="marquee__track">
+      <span class="marquee__item">Frutos do mar <svg><use href="#i-star"/></svg></span>
+      <span class="marquee__item">Pizzas no forno à lenha <svg><use href="#i-star"/></svg></span>
+      <span class="marquee__item">Pratos à la carte <svg><use href="#i-star"/></svg></span>
+      <span class="marquee__item">+80 rótulos de vinho <svg><use href="#i-star"/></svg></span>
+    </div>
+  </div>
+  <div class="marquee__row marquee__row--outline" data-dir="1" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Delivery &amp; App <svg><use href="#i-star"/></svg></span>
+      <span class="marquee__item">Salões para eventos <svg><use href="#i-star"/></svg></span>
+      <span class="marquee__item">Ponta da Praia <svg><use href="#i-star"/></svg></span>
+      <span class="marquee__item">Terça a domingo <svg><use href="#i-star"/></svg></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A CASA ============ -->
+<section class="section about" id="casa">
+  <div class="wrap">
+    <div class="about__grid">
+      <div class="about__text">
+        <p class="kicker" data-reveal>A Casa</p>
+        <p class="about__statement" data-words>Uma casa ampla, decoração agradável e um atendimento que faz <em>você querer voltar.</em></p>
+        <p class="about__body" data-reveal>Na Av. dos Bancários, 109, o Restaurante Trianon reúne um cardápio extenso de pizzas, porções e pratos à la carte, além de uma carta de vinhos com cerca de 80 rótulos. Ambientes com acessibilidade e salões preparados para a sua celebração.</p>
+        <a class="link" href="#espaco" data-reveal>Conheça o espaço <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="about__media">
+        <figure class="rimg about__img1" data-parallax><img src="img/salao-01.jpg" alt="Salão do Restaurante Trianon com mesas postas" loading="lazy"></figure>
+        <figure class="rimg about__img2" data-parallax><img src="img/vinhos.jpg" alt="Seleção de vinhos da carta do Trianon" loading="lazy"></figure>
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 160 160"><defs><path id="c1" d="M80,80 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0"/></defs><text><textPath href="#c1" textLength="374" lengthAdjust="spacing">TRIANON • RESTAURANTE &amp; PIZZARIA • SANTOS •</textPath></text></svg>
+          <span class="badge__core">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats" data-stagger>
+      <div class="stat"><span class="stat__num"><span class="pre">+</span><span data-count="80">80</span></span><span class="stat__label">rótulos na carta de vinhos</span></div>
+      <div class="stat"><span class="stat__num"><span data-count="250">250</span></span><span class="stat__label">convidados no maior espaço para eventos</span></div>
+      <div class="stat"><span class="stat__num"><span data-count="2">2</span></span><span class="stat__label">salões para eventos, com acessibilidade</span></div>
+      <div class="stat"><span class="stat__num"><span data-count="13">13</span><small>h</small></span><span class="stat__label">de portas abertas, de terça a domingo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DESTAQUES ============ -->
+<section class="section menu" id="destaques">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker" data-reveal>Confira nossos destaques</p>
+        <h2 class="h2" data-lines><span class="line"><span class="line__in">Do mar, da brasa</span></span><span class="line"><span class="line__in"><em>e do forno.</em></span></span></h2>
+      </div>
+      <p class="lead" data-reveal>Uma seleção dos pratos mais pedidos da casa — peça direto pelo delivery ou confira o cardápio completo.</p>
+    </div>
+
+    <ol class="menu__list" data-stagger>
+      <li class="menu__item"><a href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener" data-cursor="Pedir">
+        <span class="menu__n">01</span><img class="menu__thumb" src="img/prato-espeto-misto.jpg" alt="" loading="lazy">
+        <span class="menu__txt"><span class="menu__name">Espeto Misto</span><span class="menu__tag">Carnes · à la carte</span></span>
+        <span class="menu__go"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="menu__item"><a href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener" data-cursor="Pedir">
+        <span class="menu__n">02</span><img class="menu__thumb" src="img/prato-bacalhau-a-portuguesa.jpg" alt="" loading="lazy">
+        <span class="menu__txt"><span class="menu__name">Bacalhau à Portuguesa</span><span class="menu__tag">Do mar · à la carte</span></span>
+        <span class="menu__go"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="menu__item"><a href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener" data-cursor="Pedir">
+        <span class="menu__n">03</span><img class="menu__thumb" src="img/prato-filet-a-poivre.jpg" alt="" loading="lazy">
+        <span class="menu__txt"><span class="menu__name">Filet à Poivre</span><span class="menu__tag">Carnes · molho poivre</span></span>
+        <span class="menu__go"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="menu__item"><a href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener" data-cursor="Pedir">
+        <span class="menu__n">04</span><img class="menu__thumb" src="img/prato-filet-a-dijon.jpg" alt="" loading="lazy">
+        <span class="menu__txt"><span class="menu__name">Filet à Dijon</span><span class="menu__tag">Carnes · mostarda Dijon</span></span>
+        <span class="menu__go"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="menu__item"><a href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener" data-cursor="Pedir">
+        <span class="menu__n">05</span><img class="menu__thumb" src="img/pizza-portuguesa.jpg" alt="" loading="lazy">
+        <span class="menu__txt"><span class="menu__name">Deliciosas Pizzas</span><span class="menu__tag">Salgadas &amp; doces</span></span>
+        <span class="menu__go"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="menu__item"><a href="https://www.restaurantetrianon.com.br/cardapiodigital/cardapio" target="_blank" rel="noopener" data-cursor="Ver">
+        <span class="menu__n">06</span><img class="menu__thumb" src="img/vinhos.jpg" alt="" loading="lazy">
+        <span class="menu__txt"><span class="menu__name">Carta de Vinhos</span><span class="menu__tag">+80 rótulos</span></span>
+        <span class="menu__go"><svg><use href="#i-arrow"/></svg></span></a></li>
+    </ol>
+
+    <div class="menu__cta" data-reveal>
+      <a class="btn btn--gold magnetic" href="https://www.restaurantetrianon.com.br/cardapiodigital/cardapio" target="_blank" rel="noopener">Cardápio digital completo <svg><use href="#i-arrow"/></svg></a>
+      <p>Delivery: <a class="link" href="tel:+551332617202">(13) 3261-7202</a></p>
+    </div>
+  </div>
+
+  <div class="menu__float" aria-hidden="true">
+    <div class="menu__float-in">
+      <img src="img/prato-espeto-misto.jpg" alt="">
+      <img src="img/prato-bacalhau-a-portuguesa.jpg" alt="">
+      <img src="img/prato-filet-a-poivre.jpg" alt="">
+      <img src="img/prato-filet-a-dijon.jpg" alt="">
+      <img src="img/pizza-portuguesa.jpg" alt="">
+      <img src="img/vinhos.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIZZAS ============ -->
+<section class="pizza" id="pizzas">
+  <div class="pizza__fire" aria-hidden="true"></div>
+  <canvas class="embers" data-embers="pizza" aria-hidden="true"></canvas>
+  <div class="wrap pizza__inner">
+    <div class="pizza__stage" data-cursor="Gire" aria-label="Pizza Búfala com tomate seco — arraste para girar" role="img">
+      <div class="pizza__glow"></div>
+      <svg class="pizza__ring" viewBox="0 0 400 400" aria-hidden="true"><defs><path id="c2" d="M200,200 m-188,0 a188,188 0 1,1 376,0 a188,188 0 1,1 -376,0"/></defs><text><textPath href="#c2" textLength="1176" lengthAdjust="spacing">FORNO À LENHA ✦ PIZZAS SALGADAS &amp; DOCES ✦ FORNO À LENHA ✦ NO SALÃO, NO DELIVERY E NO APP ✦</textPath></text></svg>
+      <div class="pizza__tilt">
+        <div class="pizza__shadow"></div>
+        <div class="pizza__plate">
+          <div class="pizza__drag"><div class="pizza__spin">
+            <!-- --l/--t/--w/--h encaixam o contorno da pizza de cada foto no prato -->
+            <div class="pizza__layer is-active" data-flavor="bufala" style="--l:-6.44%;--t:-8.05%;--w:111.59%;--h:113%">
+              <img src="img/pizza-bufala.png" alt="" draggable="false">
+            </div>
+            <div class="pizza__layer pizza__layer--photo" data-flavor="portuguesa" style="--l:-2.5%;--t:-4.64%;--w:104.58%;--h:110.93%">
+              <img src="img/pizza-portuguesa.jpg" alt="" draggable="false">
+            </div>
+            <div class="pizza__layer pizza__layer--photo" data-flavor="doce" style="--l:-2.14%;--t:-4.42%;--w:103.63%;--h:109.86%">
+              <img src="img/pizza-chocolate-kiwi-morango.jpg" alt="" draggable="false">
+            </div>
+          </div></div>
+        </div>
+      </div>
+      <span class="pizza__tag"><i></i><span data-flavor-name>Búfala com tomate seco</span></span>
+      <span class="pizza__hint">Arraste para girar</span>
+    </div>
+
+    <!-- desktop: tudo na coluna da direita; celular: título, pizza, seletor (colado na pizza) e pilares -->
+    <div class="pizza__head">
+      <p class="kicker" data-reveal>Pizzaria</p>
+      <h2 class="h2" data-lines><span class="line"><span class="line__in">Referência em</span></span><span class="line"><span class="line__in">pizza <em>em Santos.</em></span></span></h2>
+      <p class="lead" data-reveal>Pizzas salgadas e doces, preparadas com produtos de ótima qualidade e assadas no forno à lenha.</p>
+    </div>
+    <ol class="pillars">
+      <li class="pillar"><span>01</span><h3>Forno à lenha</h3><p>Assadas no calor da lenha, do jeito tradicional.</p></li>
+      <li class="pillar"><span>02</span><h3>Ingredientes selecionados</h3><p>Produtos de ótima qualidade, do sabor clássico ao doce.</p></li>
+      <li class="pillar"><span>03</span><h3>Feitas por quem entende</h3><p>Profissionais bem preparados para servir você da melhor forma.</p></li>
+    </ol>
+    <div class="pizza__picker">
+      <p class="chips__label">Escolha um sabor</p>
+      <div class="chips" data-stagger role="group" aria-label="Sabores">
+        <button type="button" class="chip" data-flavor="bufala" aria-pressed="true">Búfala com tomate seco</button>
+        <button type="button" class="chip" data-flavor="portuguesa" aria-pressed="false">Portuguesa</button>
+        <button type="button" class="chip" data-flavor="doce" aria-pressed="false">Chocolate com kiwi e morango</button>
+      </div>
+      <p class="flavor" aria-live="polite"><b>Búfala com tomate seco</b><em>Salgada</em><br>Muçarela de búfala, tomate seco e manjericão.</p>
+      <a class="btn btn--gold magnetic" href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener" data-reveal>Peça sua pizza <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESPAÇO ============ -->
+<section class="space" id="espaco">
+  <div class="space__pin">
+    <div class="wrap space__head">
+      <div>
+        <p class="kicker" data-reveal>O espaço</p>
+        <h2 class="h2" data-lines><span class="line"><span class="line__in">Amplo, climatizado</span></span><span class="line"><span class="line__in"><em>e acessível.</em></span></span></h2>
+      </div>
+      <p class="lead" data-reveal>Salões espaçosos e bem iluminados, com estrutura para receber famílias, amigos e grandes grupos.</p>
+    </div>
+    <div class="space__track">
+      <figure class="space__card"><div class="rimg"><img src="img/salao-02.jpg" alt="Salão principal do Trianon" loading="lazy"></div><figcaption><b>Amplo</b><span>01 / 06</span></figcaption></figure>
+      <figure class="space__card"><div class="rimg"><img src="img/salao-03.jpg" alt="Salão com mesas postas" loading="lazy"></div><figcaption><b>Climatizado</b><span>02 / 06</span></figcaption></figure>
+      <figure class="space__card"><div class="rimg"><img src="img/salao-05.jpg" alt="Vista do salão" loading="lazy"></div><figcaption><b>Acessível</b><span>03 / 06</span></figcaption></figure>
+      <figure class="space__card"><div class="rimg"><img src="img/salao-04.jpg" alt="Ambiente do restaurante" loading="lazy"></div><figcaption><b>Para celebrar</b><span>04 / 06</span></figcaption></figure>
+      <figure class="space__card"><div class="rimg"><img src="img/salao-06.jpg" alt="Salão com mesas longas" loading="lazy"></div><figcaption><b>Para a família</b><span>05 / 06</span></figcaption></figure>
+      <figure class="space__card"><div class="rimg"><img src="img/fachada.jpg" alt="Fachada do Restaurante Trianon na Av. dos Bancários" loading="lazy"></div><figcaption><b>Na Ponta da Praia</b><span>06 / 06</span></figcaption></figure>
+    </div>
+    <div class="space__bar" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<!-- ============ EVENTOS ============ -->
+<section class="section events" id="eventos">
+  <div class="wrap events__grid">
+    <div class="events__copy">
+      <p class="kicker" data-reveal>Eventos</p>
+      <h2 class="h2" data-lines><span class="line"><span class="line__in">Celebre</span></span><span class="line"><span class="line__in"><em>no Trianon.</em></span></span></h2>
+      <p class="lead" data-reveal>Dois excelentes espaços para o evento da sua empresa ou qualquer outra celebração — com decoração agradável, cardápio exclusivo e uma equipe pronta para receber seus convidados.</p>
+      <ul class="features" data-stagger>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 3.5l3 2 3-2M9 20.5l3-2 3 2"/></svg>Ar-condicionado</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>Espaço para música ao vivo</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="4" r="2"/><path d="M12 7v7h5l2 6M7 10h10M9.5 12.5A5 5 0 1 0 15 19"/></svg>Ambientes com acessibilidade</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="7" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="8" r="2.4"/><path d="M16 14c2.8 0 5 2.2 5 5"/></svg>Amplo quadro de garçons</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 3h14v18H5zM12 3v18M9 11v2M15 11v2"/></svg>Banheiros independentes</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M7 2v8a2 2 0 0 0 2 2v10M11 2v6M3 2v6a4 4 0 0 0 4 4M17 22V2c2.5 1 4 4 4 8h-4"/></svg>Cardápio exclusivo e variado</li>
+      </ul>
+      <div class="ctas" data-reveal>
+        <a class="btn btn--gold magnetic" href="https://wa.me/551332617202?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20eventos%20no%20Trianon." target="_blank" rel="noopener">Solicitar orçamento <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost magnetic" href="tel:+551332617202">(13) 3261-7202</a>
+      </div>
+    </div>
+
+    <div class="viz" data-reveal>
+      <div class="seg" data-active="0" role="tablist" aria-label="Escolha o espaço">
+        <span class="seg__pill" aria-hidden="true"></span>
+        <button role="tab" aria-selected="true" data-cap="120">Espaço 1 · até 120</button>
+        <button role="tab" aria-selected="false" data-cap="250">Espaço 2 · até 250</button>
+      </div>
+      <div class="viz__count"><span class="viz__num" aria-live="polite">120</span><span class="viz__label">convidados</span></div>
+      <div class="dots" aria-hidden="true"></div>
+      <p class="viz__note">Cada ponto representa um convidado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APP ============ -->
+<section class="section app" id="app">
+  <div class="wrap app__grid">
+    <div class="app__copy">
+      <p class="kicker" data-reveal>Delivery &amp; App</p>
+      <h2 class="h2" data-lines><span class="line"><span class="line__in">O Trianon</span></span><span class="line"><span class="line__in"><em>na sua casa.</em></span></span></h2>
+      <p class="lead" data-reveal>Baixe o app e ganhe <b>10% de desconto</b> na primeira compra. Versão super leve, com o melhor do nosso cardápio no conforto da sua casa.</p>
+      <div class="stores" data-reveal>
+        <a href="https://apps.apple.com/br/app/id1530261870" target="_blank" rel="noopener"><img src="img/badge-app-store.webp" alt="Baixar na App Store" loading="lazy"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.trianonrestauranteepizzaria.ccmpedidoonline" target="_blank" rel="noopener"><img src="img/badge-google-play.webp" alt="Disponível no Google Play" loading="lazy"></a>
+      </div>
+      <a class="link" href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener" data-reveal>Prefere pelo navegador? Peça online <svg><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="loyalty" data-reveal>
+      <div class="card" id="card">
+        <div class="card__top">
+          <img class="logo" src="img/logo-trianon-branca.svg" alt="Trianon">
+          <span>Plano Fidelidade Pizza</span>
+        </div>
+        <div class="card__body">
+          <div class="ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><circle class="track" cx="60" cy="60" r="52"/><circle class="bar" cx="60" cy="60" r="52"/></svg>
+            <div class="ring__val"><b data-pts>0</b><span>de 100 pts</span></div>
+          </div>
+          <div class="slots" aria-hidden="true">
+            <i class="slot"><svg><use href="#i-slice"/></svg></i><i class="slot"><svg><use href="#i-slice"/></svg></i><i class="slot"><svg><use href="#i-slice"/></svg></i><i class="slot"><svg><use href="#i-slice"/></svg></i><i class="slot"><svg><use href="#i-slice"/></svg></i>
+            <i class="slot"><svg><use href="#i-slice"/></svg></i><i class="slot"><svg><use href="#i-slice"/></svg></i><i class="slot"><svg><use href="#i-slice"/></svg></i><i class="slot"><svg><use href="#i-slice"/></svg></i><i class="slot"><svg><use href="#i-slice"/></svg></i>
+          </div>
+        </div>
+        <p class="card__rules">Pelo app: cada pizza grande vale 10 pontos e cada média, 5. Com 100 pontos, a pizza grande Portuguesa (ou outra de mesmo valor) é por nossa conta.</p>
+        <div class="card__actions">
+          <button type="button" data-add="10">+ Pizza grande<small>10 pontos</small></button>
+          <button type="button" data-add="5">+ Pizza média<small>5 pontos</small></button>
+        </div>
+        <p class="card__msg" aria-live="polite">Simule: toque nos botões e veja seus pontos crescerem.</p>
+        <button type="button" class="card__reset">Recomeçar simulação</button>
+      </div>
+      <div class="badge badge--app" aria-hidden="true">
+        <svg viewBox="0 0 160 160"><defs><path id="c3" d="M80,80 m-60,0 a60,60 0 1,1 120,0 a60,60 0 1,1 -120,0"/></defs><text><textPath href="#c3" textLength="374" lengthAdjust="spacing">DESCONTO NA PRIMEIRA COMPRA PELO APP •</textPath></text></svg>
+        <span class="badge__core">10%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVALIAÇÕES ============ -->
+<section class="section reviews" id="avaliacoes">
+  <div class="wrap reviews__grid">
+    <div class="reviews__copy">
+      <p class="kicker" data-reveal>Avaliações</p>
+      <h2 class="h2" data-lines><span class="line"><span class="line__in">O que nossos</span></span><span class="line"><span class="line__in"><em>clientes dizem.</em></span></span></h2>
+      <p class="lead" data-reveal>Quem vem, volta. E conta para os amigos.</p>
+      <a class="btn btn--ghost magnetic" data-reveal href="https://www.google.com/search?q=restaurante+trianon#lrd=0x94ce021475ea20f3:0x6890961db4c5cfa5,3,,,," target="_blank" rel="noopener">Deixe sua avaliação <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div data-reveal>
+      <div class="deck" data-cursor="Arraste">
+        <blockquote class="quote"><div class="quote__mark">“</div><p>Ambiente bonito, atendentes muito educados, comida farta e deliciosa. A nossa escolha são sempre os camarões.</p><footer><i>G</i>Glaucia Ferreira</footer></blockquote>
+        <blockquote class="quote"><div class="quote__mark">“</div><p>Este restaurante é incrível. Tem acessibilidade, impecavelmente limpo. Garçons excelentes, a comida é perfeita.</p><footer><i>N</i>Nana Diniz</footer></blockquote>
+        <blockquote class="quote"><div class="quote__mark">“</div><p>O atendimento, a organização, limpeza e aparência de tudo é excelente. Lugar de alto padrão.</p><footer><i>A</i>Ariel</footer></blockquote>
+      </div>
+      <div class="deck__ctrl">
+        <button type="button" data-deck="-1" aria-label="Avaliação anterior"><svg style="transform:scaleX(-1)"><use href="#i-arrow"/></svg></button>
+        <button type="button" data-deck="1" aria-label="Próxima avaliação"><svg><use href="#i-arrow"/></svg></button>
+        <span class="deck__count">01 / 03</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="section insta" id="instagram">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="kicker" data-reveal>@trianonrestaurante</p>
+        <h2 class="h2" data-lines><span class="line"><span class="line__in">Nos acompanhe</span></span><span class="line"><span class="line__in"><em>no Instagram.</em></span></span></h2>
+      </div>
+      <a class="btn btn--ghost magnetic" data-reveal href="https://www.instagram.com/trianonrestaurante/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Seguir</a>
+    </div>
+    <div class="insta__grid" data-stagger>
+      <a class="post" href="https://www.instagram.com/p/DN36RhajGOE/" target="_blank" rel="noopener" data-cursor="Ver"><img src="img/instagram/post-01.webp" alt="Pizza do Trianon" loading="lazy"><span class="post__over"><svg><use href="#i-ig"/></svg><p>Delicadeza e tradição que conquista em cada fatia.</p></span></a>
+      <a class="post" href="https://www.instagram.com/p/DNnw6JOoGDZ/" target="_blank" rel="noopener" data-cursor="Ver"><img src="img/instagram/post-02.webp" alt="Frango à Catupiry" loading="lazy"><span class="post__over"><svg><use href="#i-ig"/></svg><p>Frango à Catupiry: sabor e cremosidade no ponto certo.</p></span></a>
+      <a class="post" href="https://www.instagram.com/p/DNinRCQMH1_/" target="_blank" rel="noopener" data-cursor="Ver"><img src="img/instagram/post-03.webp" alt="Aplicativo do Trianon" loading="lazy"><span class="post__over"><svg><use href="#i-ig"/></svg><p>Praticidade e conforto: o melhor do Trianon na sua casa.</p></span></a>
+      <a class="post" href="https://www.instagram.com/p/DNa4_Ypxxr8/" target="_blank" rel="noopener" data-cursor="Ver"><img src="img/instagram/post-04.webp" alt="Polvo ao alho e óleo" loading="lazy"><span class="post__over"><svg><use href="#i-ig"/></svg><p>O sabor marcante do Polvo ao Alho e Óleo.</p></span></a>
+      <a class="post" href="https://www.instagram.com/p/DNT3I-jxTsc/" target="_blank" rel="noopener" data-cursor="Ver"><img src="img/instagram/post-05.webp" alt="Pizza de chocolate com kiwi e morango" loading="lazy"><span class="post__over"><svg><use href="#i-ig"/></svg><p>Pizza de Chocolate com Kiwi e Morango.</p></span></a>
+      <a class="post" href="https://www.instagram.com/p/DNNzMsZBBHM/" target="_blank" rel="noopener" data-cursor="Ver"><img src="img/instagram/post-06.webp" alt="Equipe do Trianon no Dia do Garçom" loading="lazy"><span class="post__over"><svg><use href="#i-ig"/></svg><p>Dia do Garçom: obrigado, equipe Trianon!</p></span></a>
+      <a class="post" href="https://www.instagram.com/p/DNLYr2EpWTn/" target="_blank" rel="noopener" data-cursor="Ver"><img src="img/instagram/post-07.webp" alt="Homenagem de Dia dos Pais" loading="lazy"><span class="post__over"><svg><use href="#i-ig"/></svg><p>Uma mesa cheia de sabor e afeto.</p></span></a>
+      <a class="post" href="https://www.instagram.com/p/DNLVP5jR87B/" target="_blank" rel="noopener" data-cursor="Ver"><img src="img/instagram/post-08.webp" alt="Camarão do Trianon" loading="lazy"><span class="post__over"><svg><use href="#i-ig"/></svg><p>Camarão à Copacabana ou à Grega.</p></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISITE ============ -->
+<section class="section visit" id="visite">
+  <div class="wrap visit__grid">
+    <div class="visit__info">
+      <p class="kicker" data-reveal>Visite-nos</p>
+      <h2 class="h2" data-lines><span class="line"><span class="line__in">Venha nos</span></span><span class="line"><span class="line__in"><em>visitar.</em></span></span></h2>
+      <p class="addr" data-reveal><svg><use href="#i-pin"/></svg><span>Av. dos Bancários, 109<br>Ponta da Praia · Santos/SP</span></p>
+      <div class="hours" data-reveal>
+        <span class="status" data-status><i></i><span>Terça a domingo · 11h às 00h</span></span>
+        <ul class="week">
+          <li data-day="2"><span>Terça-feira</span><span>11h – 00h</span></li>
+          <li data-day="3"><span>Quarta-feira</span><span>11h – 00h</span></li>
+          <li data-day="4"><span>Quinta-feira</span><span>11h – 00h</span></li>
+          <li data-day="5"><span>Sexta-feira</span><span>11h – 00h</span></li>
+          <li data-day="6"><span>Sábado</span><span>11h – 00h</span></li>
+          <li data-day="0"><span>Domingo</span><span>11h – 00h</span></li>
+          <li data-day="1"><span>Segunda-feira</span><span>Fechado</span></li>
+        </ul>
+      </div>
+      <div class="contacts" data-stagger>
+        <a href="tel:+551332617202"><small>Delivery</small><b>(13) 3261-7202</b></a>
+        <a href="tel:+551332618581"><small>Telefone</small><b>(13) 3261-8581</b></a>
+      </div>
+      <div class="ctas" data-reveal>
+        <a class="btn btn--gold magnetic" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+dos+Banc%C3%A1rios,+109+-+Ponta+da+Praia,+Santos+-+SP" target="_blank" rel="noopener">Como chegar <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost magnetic" href="https://wa.me/551332617202" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+    </div>
+    <div class="map" data-reveal>
+      <iframe title="Mapa: Restaurante Trianon, Av. dos Bancários, 109 — Santos" src="https://maps.google.com/maps?q=Av%20dos%20Banc%C3%A1rios%2C%20109%20Ponta%20da%20Praia%20Santos%20-%20SP&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <img class="logo" src="img/logo-trianon-branca.svg" alt="Trianon Restaurante e Pizzaria" loading="lazy">
+        <p>Excelência em frutos do mar, pratos à la carte e variedade em pizzas. Av. dos Bancários, 109 — Ponta da Praia, Santos/SP.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/trianonrestaurante/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+          <a href="https://www.facebook.com/RestauranteePizzariaTrianon" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="https://wa.me/551332617202" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-wa"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#casa">A Casa</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+          <li><a href="#pizzas">Pizzas</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#app">Baixe o App</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Peça</h4>
+        <ul>
+          <li><a href="https://www.restaurantetrianon.com.br/cardapiodigital/cardapio" target="_blank" rel="noopener">Cardápio digital</a></li>
+          <li><a href="https://trianonrestauranteepizzaria.ccmpedidoonline.com.br/" target="_blank" rel="noopener">Pedido online</a></li>
+          <li><a href="https://restaurantetrianon.com.br/promocoes/" target="_blank" rel="noopener">Promoções</a></li>
+          <li><a href="tel:+551332617202">(13) 3261-7202</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horário</h4>
+        <ul>
+          <li><a href="#visite">Terça a domingo</a></li>
+          <li><a href="#visite">11h às 00h</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__word" aria-hidden="true">Trianon</div>
+    <div class="foot__bar">
+      <span>© <span data-year>2026</span> Restaurante Trianon · Todos os direitos reservados</span>
+      <a href="https://restaurantetrianon.com.br/politica-de-privacidade/" target="_blank" rel="noopener">Política de privacidade</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/551332617202" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp"><svg><use href="#i-wa"/></svg><span>Fale conosco</span></a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(() => {
+  const $ = (s, c = document) => c.querySelector(s);
+  const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+  const root = document.documentElement;
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const FINE = matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const GS = !!(window.gsap && window.ScrollTrigger);
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  if (GS) gsap.registerPlugin(ScrollTrigger);
+
+  /* ---------- smooth scroll ---------- */
+  scrollTo(0, 0);
+  let lenis = null;
+  if (!RM && window.Lenis) {
+    lenis = new Lenis({ lerp: 0.095, smoothWheel: true });
+    lenis.stop(); // sem rolar enquanto a abertura está na tela
+    if (GS) {
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(t => lenis.raf(t * 1000));
+      gsap.ticker.lagSmoothing(0);
+    } else {
+      const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
+      requestAnimationFrame(raf);
+    }
+  }
+  const body = document.body;
+  const burger = $('.burger');
+  function closeMenu() {
+    body.classList.remove('menu-open');
+    burger.setAttribute('aria-expanded', 'false');
+    if (lenis) lenis.start();
+  }
+  burger.addEventListener('click', () => {
+    const open = !body.classList.contains('menu-open');
+    body.classList.toggle('menu-open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    if (lenis) open ? lenis.stop() : lenis.start();
+  });
+  addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+  $$('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    const t = id.length > 1 && $(id);
+    if (!t) return;
+    e.preventDefault();
+    closeMenu();
+    if (lenis) lenis.scrollTo(t, { offset: id === '#top' ? 0 : -40, duration: 1.5 });
+    else t.scrollIntoView({ behavior: RM ? 'auto' : 'smooth' });
+  }));
+
+  /* ---------- loader + hero slider ---------- */
+  const slides = $$('.hero__slide'), tabs = $$('.hero__tab');
+  let cur = -1, timer;
+  function go(i) {
+    slides.forEach((s, j) => s.classList.toggle('is-active', j === i));
+    tabs.forEach((t, j) => {
+      t.classList.remove('is-active');
+      t.setAttribute('aria-selected', String(j === i));
+    });
+    void tabs[i].offsetWidth;
+    tabs[i].classList.add('is-active');
+    cur = i;
+    clearTimeout(timer);
+    if (!RM) timer = setTimeout(() => go((cur + 1) % slides.length), 6500);
+  }
+  tabs.forEach((t, i) => t.addEventListener('click', () => go(i)));
+
+  const t0 = performance.now();
+  const fontsReady = Promise.race([document.fonts ? document.fonts.ready : Promise.resolve(), new Promise(r => setTimeout(r, 2200))]);
+  fontsReady.then(() => {
+    const wait = Math.max(0, (RM ? 0 : 1350) - (performance.now() - t0));
+    setTimeout(() => {
+      root.classList.add('is-loaded');
+      go(0);
+      if (lenis) lenis.start();
+      if (GS) ScrollTrigger.refresh();
+      // link com âncora (ex.: /#eventos): só rola depois que tudo foi medido
+      const target = window.__startHash && $(window.__startHash);
+      if (target) {
+        history.replaceState(null, '', window.__startHash);
+        setTimeout(() => lenis ? lenis.scrollTo(target, { offset: -40, duration: 1.6 }) : target.scrollIntoView(), 700);
+      }
+    }, wait);
+  });
+
+  /* ---------- hero pointer parallax ---------- */
+  const hero = $('.hero'), pan = $('.hero__pan');
+  let heroVisible = true;
+  new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; }).observe(hero);
+  if (FINE && !RM) {
+    let mx = 0, my = 0, cx = 0, cy = 0;
+    hero.addEventListener('pointermove', e => {
+      mx = e.clientX / innerWidth - 0.5;
+      my = e.clientY / innerHeight - 0.5;
+    });
+    (function loop() {
+      if (heroVisible) {
+        cx += (mx - cx) * 0.05; cy += (my - cy) * 0.05;
+        pan.style.transform = `translate3d(${cx * -28}px, ${cy * -20}px, 0)`;
+      }
+      requestAnimationFrame(loop);
+    })();
+  }
+
+  /* ---------- embers (canvas) ---------- */
+  // brilho pré-renderizado uma vez (bem mais leve que criar gradientes a cada quadro)
+  function glowSprite(core, mid) {
+    const c = document.createElement('canvas'); c.width = c.height = 64;
+    const x = c.getContext('2d'), g = x.createRadialGradient(32, 32, 0, 32, 32, 32);
+    g.addColorStop(0, core); g.addColorStop(0.2, mid); g.addColorStop(0.5, 'rgba(255,90,30,.18)'); g.addColorStop(1, 'rgba(255,80,20,0)');
+    x.fillStyle = g; x.fillRect(0, 0, 64, 64);
+    return c;
+  }
+  const SPRITES = [glowSprite('rgba(255,236,190,1)', 'rgba(255,170,80,.8)'), glowSprite('rgba(255,210,150,1)', 'rgba(255,120,50,.8)')];
+  function embers(canvas, opts = {}) {
+    const ctx = canvas.getContext('2d');
+    const host = canvas.parentElement;
+    let w = 0, h = 0, parts = [], running = false, mouse = { x: -1e4, y: -1e4 };
+    const spawn = init => ({
+      x: Math.random() * w,
+      y: init ? Math.random() * h : h + 10,
+      r: Math.random() * 1.7 + 0.5,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: -(Math.random() * 0.7 + 0.25) * (opts.speed || 1),
+      life: init ? Math.random() * 300 : 0,
+      max: 320 + Math.random() * 380,
+      s: SPRITES[Math.random() < 0.5 ? 0 : 1],
+      fl: Math.random() * 6.28
+    });
+    function resize() {
+      w = canvas.clientWidth; h = canvas.clientHeight;
+      canvas.width = w; canvas.height = h; // DPR 1: são brilhos suaves, não precisa de retina
+      const n = Math.min(opts.max || 90, Math.round(w / (opts.density || 16)));
+      parts = Array.from({ length: n }, () => spawn(true));
+    }
+    host.addEventListener('pointermove', e => {
+      const r = canvas.getBoundingClientRect();
+      mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top;
+    });
+    host.addEventListener('pointerleave', () => { mouse.x = mouse.y = -1e4; });
+    function tick(t) {
+      if (!running) return;
+      ctx.clearRect(0, 0, w, h);
+      ctx.globalCompositeOperation = 'lighter';
+      for (let i = 0; i < parts.length; i++) {
+        const p = parts[i];
+        p.life++; p.fl += 0.09;
+        p.vx += Math.sin(t * 0.0007 + p.y * 0.012) * 0.012;
+        const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
+        if (d2 < 16000) {
+          const d = Math.sqrt(d2) + 0.01, f = (1 - d2 / 16000) * 0.5;
+          p.vx += (dx / d) * f; p.vy += (dy / d) * f * 0.6;
+        }
+        p.vx *= 0.97; p.vy = p.vy * 0.985 - 0.006;
+        p.x += p.vx; p.y += p.vy;
+        const a = Math.min(1, p.life / (p.burst ? 6 : 50)) * Math.max(0, 1 - p.life / p.max) * (0.55 + 0.45 * Math.sin(p.fl));
+        const size = p.r * 12;
+        ctx.globalAlpha = a;
+        ctx.drawImage(p.s, p.x - size / 2, p.y - size / 2, size, size);
+        if (p.life > p.max || p.y < -20 || p.x < -30 || p.x > w + 30) {
+          if (p.burst) { parts.splice(i, 1); i--; } else parts[i] = spawn(false);
+        }
+      }
+      ctx.globalAlpha = 1;
+      requestAnimationFrame(tick);
+    }
+    resize();
+    addEventListener('resize', resize);
+    new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !running) { running = true; requestAnimationFrame(tick); }
+      else if (!e.isIntersecting) running = false;
+    }).observe(canvas);
+    // rajada de faíscas a partir de um ponto (coordenadas da tela)
+    return {
+      burst(cx, cy, radius, n = 34) {
+        const r = canvas.getBoundingClientRect();
+        for (let k = 0; k < n; k++) {
+          const ang = Math.random() * Math.PI * 2, d = Math.random() * radius;
+          parts.push({
+            x: cx - r.left + Math.cos(ang) * d, y: cy - r.top + Math.sin(ang) * d * 0.6,
+            r: Math.random() * 1.8 + 0.8, vx: Math.cos(ang) * (Math.random() * 2.6 + 0.6), vy: -(Math.random() * 3.4 + 1.2),
+            life: 0, max: 70 + Math.random() * 90, s: SPRITES[k % 2], fl: Math.random() * 6.28, burst: true
+          });
+        }
+      }
+    };
+  }
+  let pizzaEmbers = null;
+  if (!RM) {
+    embers($('[data-embers="hero"]'), { density: 16, max: 90 });
+    pizzaEmbers = embers($('[data-embers="pizza"]'), { density: 24, max: 60, speed: 1.2 });
+  }
+
+  /* ---------- nav: scrolled / hide on scroll / progress / active ---------- */
+  const nav = $('#nav'), progress = $('.progress'), fab = $('.fab');
+  let lastY = scrollY;
+  function onScroll() {
+    const y = scrollY;
+    const scrolled = y > 40;
+    nav.classList.toggle('is-scrolled', scrolled);
+    body.classList.toggle('nav-scrolled', scrolled);
+    if (!body.classList.contains('menu-open')) {
+      const hide = y > lastY && y > 400;
+      nav.classList.toggle('is-hidden', hide);
+      body.classList.toggle('nav-hidden', hide);
+    }
+    fab.classList.toggle('is-in', y > innerHeight * 0.55);
+    lastY = y;
+    const max = root.scrollHeight - innerHeight;
+    progress.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  const navLinks = $$('.nav__links a');
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      navLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  ['casa', 'destaques', 'pizzas', 'eventos', 'app', 'visite'].forEach(id => spy.observe(document.getElementById(id)));
+
+  /* ---------- marquee (reage à velocidade do scroll) ---------- */
+  const rows = $$('.marquee__row').map(r => {
+    const track = $('.marquee__track', r);
+    const clone = track.innerHTML;
+    track.insertAdjacentHTML('beforeend', clone);
+    return { track, dir: +r.dataset.dir, x: 0, w: 0 };
+  });
+  const measure = () => rows.forEach(r => { r.w = r.track.scrollWidth / 2; });
+  measure(); addEventListener('resize', measure);
+  if (document.fonts) document.fonts.ready.then(measure);
+  if (!RM) {
+    let vel = 0, prevY = scrollY, mVisible = false;
+    new IntersectionObserver(([e]) => { mVisible = e.isIntersecting; }).observe($('.marquee'));
+    (function mloop() {
+      const y = scrollY, v = lenis ? lenis.velocity : y - prevY;
+      prevY = y;
+      vel += (v - vel) * 0.1;
+      if (mVisible) {
+        const boost = 1 + Math.min(Math.abs(vel), 60) * 0.14;
+        const sgn = vel < -0.3 ? -1 : 1;
+        const skew = clamp(vel * -0.25, -9, 9);
+        rows.forEach(r => {
+          r.x += r.dir * 0.55 * boost * sgn;
+          if (r.x <= -r.w) r.x += r.w;
+          if (r.x > 0) r.x -= r.w;
+          r.track.style.transform = `translate3d(${r.x}px,0,0) skewX(${skew}deg)`;
+        });
+      }
+      requestAnimationFrame(mloop);
+    })();
+  }
+
+  /* ---------- scroll reveals ---------- */
+  if (GS && !RM) {
+    $$('[data-reveal]').forEach(el => {
+      gsap.from(el, { y: 46, opacity: 0, duration: 1.2, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
+    });
+    $$('[data-stagger]').forEach(g => {
+      gsap.from(g.children, { y: 40, opacity: 0, duration: 1.1, ease: 'power3.out', stagger: 0.08, scrollTrigger: { trigger: g, start: 'top 88%', once: true } });
+    });
+    $$('[data-lines]').forEach(h => {
+      gsap.from($$('.line__in', h), { yPercent: 112, duration: 1.3, ease: 'expo.out', stagger: 0.1, scrollTrigger: { trigger: h, start: 'top 88%', once: true } });
+    });
+    $$('.rimg').forEach(f => {
+      const img = $('img', f);
+      const trig = f.closest('.space__track') ? f.closest('.space') : f;
+      gsap.fromTo(f, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: 1.5, ease: 'expo.out', scrollTrigger: { trigger: trig, start: 'top 82%', once: true } });
+      gsap.fromTo(img, { scale: 1.35 }, { scale: 1, duration: 2, ease: 'expo.out', scrollTrigger: { trigger: trig, start: 'top 82%', once: true } });
+      if (f.hasAttribute('data-parallax')) {
+        gsap.fromTo(img, { yPercent: -6 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: f, start: 'top bottom', end: 'bottom top', scrub: true } });
+      }
+    });
+    // hero sai suavemente ao rolar
+    gsap.to('.hero__content', { yPercent: -18, opacity: 0, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom 20%', scrub: true } });
+    gsap.to('.hero__media', { yPercent: 14, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
+    // frase da casa: palavra por palavra
+    $$('[data-words]').forEach(el => {
+      const words = [];
+      (function walk(node) {
+        [...node.childNodes].forEach(n => {
+          if (n.nodeType === 3) {
+            const frag = document.createDocumentFragment();
+            n.textContent.split(/(\s+)/).forEach(part => {
+              if (!part) return;
+              if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+              const s = document.createElement('span'); s.textContent = part; words.push(s); frag.appendChild(s);
+            });
+            n.replaceWith(frag);
+          } else if (n.nodeType === 1) walk(n);
+        });
+      })(el);
+      gsap.fromTo(words, { opacity: 0.13 }, { opacity: 1, stagger: 0.1, ease: 'none', scrollTrigger: { trigger: el, start: 'top 82%', end: 'bottom 50%', scrub: true } });
+    });
+    // números
+    $$('[data-count]').forEach(el => {
+      const end = +el.dataset.count, o = { v: 0 };
+      el.textContent = '0';
+      gsap.to(o, { v: end, duration: 2.2, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true }, onUpdate: () => { el.textContent = Math.round(o.v); } });
+    });
+    // TRIANON do rodapé preenchendo
+    gsap.to('.foot__word', { backgroundPosition: '0% 0', ease: 'none', scrollTrigger: { trigger: '.foot__word', start: 'top bottom', end: 'bottom 85%', scrub: true } });
+  }
+
+  /* ---------- pizza: gira com o scroll + arrastar ---------- */
+  const spin = $('.pizza__spin'), drag = $('.pizza__drag'), stage = $('.pizza__stage'), tilt = $('.pizza__tilt');
+  const pillars = $$('.pillar');
+  const setPillars = p => pillars.forEach((el, i) => el.classList.toggle('is-on', p >= i / pillars.length - 0.02));
+  if (GS && !RM) {
+    const mm = gsap.matchMedia();
+    mm.add('(min-width: 901px)', () => {
+      const tl = gsap.timeline({ scrollTrigger: { trigger: '.pizza', start: 'top top', end: '+=130%', pin: true, scrub: 1, onUpdate: s => setPillars(s.progress) } });
+      tl.fromTo(spin, { rotation: -60 }, { rotation: 200, ease: 'none', duration: 1 }, 0)
+        .fromTo(stage, { scale: 0.86 }, { scale: 1, ease: 'power1.out', duration: 0.5 }, 0);
+      setPillars(0);
+    });
+    mm.add('(max-width: 900px)', () => {
+      gsap.fromTo(spin, { rotation: -60 }, { rotation: 160, ease: 'none', scrollTrigger: { trigger: '.pizza', start: 'top bottom', end: 'bottom top', scrub: true } });
+    });
+  } else setPillars(1);
+  // arrastar para girar (com inércia)
+  let dragRot = 0, dragVel = 0, dragging = false, lastX = 0;
+  stage.addEventListener('pointerdown', e => { dragging = true; lastX = e.clientX; stage.setPointerCapture(e.pointerId); });
+  stage.addEventListener('pointermove', e => {
+    if (dragging) {
+      const dx = e.clientX - lastX; lastX = e.clientX;
+      dragVel = dx * 0.5; dragRot += dragVel;
+      drag.style.transform = `rotate(${dragRot}deg)`;
+    } else if (FINE && !RM) {
+      const r = stage.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5, py = (e.clientY - r.top) / r.height - 0.5;
+      tilt.style.transform = `perspective(1400px) rotateX(${py * -12}deg) rotateY(${px * 14}deg)`;
+    }
+  });
+  const endDrag = () => {
+    if (!dragging) return;
+    dragging = false;
+    (function inertia() {
+      if (dragging || Math.abs(dragVel) < 0.05) return;
+      dragVel *= 0.95; dragRot += dragVel;
+      drag.style.transform = `rotate(${dragRot}deg)`;
+      requestAnimationFrame(inertia);
+    })();
+  };
+  stage.addEventListener('pointerup', endDrag);
+  stage.addEventListener('pointercancel', endDrag);
+  stage.addEventListener('pointerleave', () => { tilt.style.transform = ''; });
+
+  /* ---------- sabores: troca a pizza do prato ---------- */
+  // ingredientes conforme o cardápio digital; tilt = proporção do contorno da pizza em cada foto
+  const FLAVORS = {
+    bufala: { name: 'Búfala com tomate seco', kind: 'Salgada', desc: 'Muçarela de búfala, tomate seco e manjericão.', tilt: 0.693 },
+    portuguesa: { name: 'Portuguesa', kind: 'Salgada', desc: 'Muçarela, presunto, palmito, ervilha, cebola, ovos e azeitonas.', tilt: 0.63 },
+    doce: { name: 'Chocolate com kiwi e morango', kind: 'Doce', desc: 'Pizza doce de chocolate com kiwi e morango.', tilt: 0.628 }
+  };
+  const plate = $('.pizza__plate'), flavorEl = $('.flavor'), tagName = $('[data-flavor-name]'), tagEl = $('.pizza__tag');
+  const layers = Object.fromEntries($$('.pizza__layer').map(l => [l.dataset.flavor, l]));
+  const flavorChips = $$('.chip[data-flavor]');
+  let flavorNow = 'bufala';
+  if (GS) gsap.set(plate, { scaleY: FLAVORS.bufala.tilt });
+  function setFlavor(key) {
+    if (key === flavorNow || !FLAVORS[key]) return;
+    const f = FLAVORS[key], from = layers[flavorNow], to = layers[key];
+    flavorChips.forEach(c => c.setAttribute('aria-pressed', String(c.dataset.flavor === key)));
+    stage.setAttribute('aria-label', `Pizza ${f.name} — arraste para girar`);
+    const text = () => {
+      tagName.textContent = f.name;
+      flavorEl.innerHTML = `<b>${f.name}</b><em>${f.kind}</em><br>${f.desc}`;
+    };
+    from.classList.remove('is-active');
+    to.classList.add('is-active');
+    if (GS && !RM) {
+      gsap.killTweensOf([from, to, plate, tagEl, flavorEl]);
+      gsap.to(from, { rotation: '+=150', scale: 0.5, autoAlpha: 0, duration: 0.55, ease: 'power3.in' });
+      gsap.fromTo(to, { rotation: -170, scale: 0.5, autoAlpha: 0 }, { rotation: 0, scale: 1, autoAlpha: 1, duration: 1.1, ease: 'expo.out', delay: 0.4 });
+      gsap.to(plate, { scaleY: f.tilt, duration: 1, ease: 'power3.inOut' });
+      gsap.timeline()
+        .to([tagEl, flavorEl], { autoAlpha: 0, y: -8, duration: 0.25, ease: 'power2.in' })
+        .add(text)
+        .to([tagEl, flavorEl], { autoAlpha: 1, y: 0, duration: 0.5, ease: 'power3.out' });
+      if (pizzaEmbers) {
+        const r = stage.getBoundingClientRect();
+        setTimeout(() => pizzaEmbers.burst(r.left + r.width / 2, r.top + r.height / 2, r.width * 0.32), 380);
+      }
+    } else {
+      from.style.cssText += ';opacity:0;visibility:hidden';
+      to.style.cssText += ';opacity:1;visibility:visible';
+      plate.style.transform = `scaleY(${f.tilt})`;
+      text();
+    }
+    flavorNow = key;
+  }
+  flavorChips.forEach(c => c.addEventListener('click', () => setFlavor(c.dataset.flavor)));
+
+  /* ---------- espaço: galeria horizontal ---------- */
+  if (GS && !RM) {
+    const mm2 = gsap.matchMedia();
+    mm2.add('(min-width: 901px)', () => {
+      const track = $('.space__track'), bar = $('.space__bar span');
+      const dist = () => Math.max(0, track.scrollWidth - innerWidth);
+      const tween = gsap.to(track, {
+        x: () => -dist(), ease: 'none',
+        scrollTrigger: { trigger: '.space', start: 'top top', end: () => '+=' + dist(), pin: true, scrub: 1, invalidateOnRefresh: true, onUpdate: s => { bar.style.transform = `scaleX(${s.progress})`; } }
+      });
+      $$('.space__card img').forEach(img => {
+        gsap.fromTo(img, { xPercent: -7 }, { xPercent: 7, ease: 'none', scrollTrigger: { trigger: img.closest('.space__card'), containerAnimation: tween, start: 'left right', end: 'right left', scrub: true } });
+      });
+    });
+  }
+  // recalcula na ordem em que aparecem na página (as seções presas empurram as de baixo)
+  if (GS) ScrollTrigger.sort();
+
+  /* ---------- lista de destaques: imagem segue o cursor ---------- */
+  if (FINE && !RM && matchMedia('(min-width: 901px)').matches) {
+    const list = $('.menu__list'), float = $('.menu__float'), imgs = $$('img', float);
+    const items = $$('.menu__item', list);
+    let tx = 0, ty = 0, x = 0, y = 0, active = -1, on = false;
+    list.addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; if (!on) { x = tx; y = ty; } });
+    items.forEach((it, i) => it.addEventListener('pointerenter', () => {
+      if (i !== active) {
+        imgs.forEach((im, j) => {
+          im.classList.toggle('is-active', j === i);
+          im.classList.toggle('was-active', j === active);
+          if (j !== i && j !== active) im.classList.remove('was-active');
+        });
+        active = i;
+      }
+      on = true; float.classList.add('is-on');
+    }));
+    list.addEventListener('pointerleave', () => { on = false; float.classList.remove('is-on'); });
+    (function floop() {
+      const dx = tx - x;
+      x += dx * 0.14; y += (ty - y) * 0.14;
+      float.style.transform = `translate3d(${x}px, ${y}px, 0) translate(-50%, -50%) rotate(${clamp(dx * 0.06, -10, 10)}deg)`;
+      requestAnimationFrame(floop);
+    })();
+  }
+
+  /* ---------- eventos: grade de convidados ---------- */
+  const dotsEl = $('.dots'), seg = $('.seg'), num = $('.viz__num');
+  for (let i = 0; i < 250; i++) dotsEl.appendChild(document.createElement('i'));
+  const dots = $$('i', dotsEl);
+  let capNow = 0;
+  function setCap(n) {
+    dots.forEach((d, i) => {
+      const col = i % 25, row = Math.floor(i / 25);
+      d.style.transitionDelay = RM ? '0ms' : `${(col + row * 2) * 14}ms`;
+      d.classList.toggle('on', i < n);
+    });
+    if (GS && !RM) {
+      const o = { v: capNow };
+      gsap.to(o, { v: n, duration: 1.1, ease: 'power3.out', onUpdate: () => { num.textContent = Math.round(o.v); } });
+    } else num.textContent = n;
+    capNow = n;
+  }
+  $$('button', seg).forEach((b, i) => b.addEventListener('click', () => {
+    seg.dataset.active = i;
+    $$('button', seg).forEach(o => o.setAttribute('aria-selected', String(o === b)));
+    setCap(+b.dataset.cap);
+  }));
+  new IntersectionObserver(([e], obs) => {
+    if (e.isIntersecting) { setCap(120); obs.disconnect(); }
+  }, { threshold: 0.4 }).observe(dotsEl);
+
+  /* ---------- fidelidade ---------- */
+  const card = $('#card'), ptsEl = $('[data-pts]', card), ringBar = $('.ring .bar', card), slots = $$('.slot', card);
+  const msg = $('.card__msg', card), addBtns = $$('[data-add]', card);
+  const C = 326.73;
+  let pts = 0;
+  function renderPts(prev) {
+    ringBar.style.strokeDashoffset = C * (1 - pts / 100);
+    slots.forEach((s, i) => {
+      const f = clamp((pts - i * 10) / 10, 0, 1);
+      s.style.setProperty('--f', f);
+      s.classList.toggle('full', f === 1);
+    });
+    if (GS && !RM) {
+      const o = { v: prev };
+      gsap.to(o, { v: pts, duration: 0.8, ease: 'power2.out', onUpdate: () => { ptsEl.textContent = Math.round(o.v); } });
+    } else ptsEl.textContent = pts;
+  }
+  function confetti() {
+    if (RM) return;
+    const host = card.parentElement;
+    for (let i = 0; i < 46; i++) {
+      const el = document.createElement('span');
+      el.className = 'confetti';
+      if (i % 3 === 0) el.textContent = '🍕';
+      else { el.style.cssText = `width:${6 + Math.random() * 6}px;height:${10 + Math.random() * 8}px;border-radius:2px;background:${['#c9a25e', '#e4c58c', '#ff7a3d', '#f4ecdc'][i % 4]}`; }
+      host.appendChild(el);
+      const a = Math.random() * Math.PI * 2, d = 140 + Math.random() * 240;
+      el.animate([
+        { transform: 'translate(-50%,-50%) rotate(0deg)', opacity: 1 },
+        { transform: `translate(calc(-50% + ${Math.cos(a) * d}px), calc(-50% + ${Math.sin(a) * d - 60}px)) rotate(${Math.random() * 720 - 360}deg)`, opacity: 1, offset: 0.7 },
+        { transform: `translate(calc(-50% + ${Math.cos(a) * d * 1.1}px), calc(-50% + ${Math.sin(a) * d + 120}px)) rotate(${Math.random() * 720}deg)`, opacity: 0 }
+      ], { duration: 1500 + Math.random() * 900, easing: 'cubic-bezier(.15,.7,.3,1)' }).onfinish = () => el.remove();
+    }
+  }
+  addBtns.forEach(b => b.addEventListener('click', () => {
+    if (pts >= 100) return;
+    const prev = pts;
+    pts = Math.min(100, pts + +b.dataset.add);
+    renderPts(prev);
+    if (pts >= 100) {
+      msg.innerHTML = '<b>Parabéns!</b> Sua próxima pizza grande Portuguesa é por nossa conta. 🎉';
+      card.classList.add('is-done');
+      addBtns.forEach(x => x.disabled = true);
+      confetti();
+    } else {
+      const left = 100 - pts;
+      msg.innerHTML = `Faltam <b>${left} pontos</b> para a sua pizza grátis.`;
+    }
+  }));
+  $('.card__reset', card).addEventListener('click', () => {
+    const prev = pts; pts = 0; renderPts(prev);
+    card.classList.remove('is-done');
+    addBtns.forEach(x => x.disabled = false);
+    msg.textContent = 'Simule: toque nos botões e veja seus pontos crescerem.';
+  });
+  if (FINE && !RM) {
+    card.addEventListener('pointermove', e => {
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+      card.style.transform = `perspective(1000px) rotateX(${(py - 0.5) * -8}deg) rotateY(${(px - 0.5) * 10}deg)`;
+      card.style.setProperty('--gx', px * 100 + '%');
+      card.style.setProperty('--gy', py * 100 + '%');
+    });
+    card.addEventListener('pointerleave', () => { card.style.transform = ''; });
+  }
+
+  /* ---------- avaliações: baralho ---------- */
+  const deck = $('.deck'), quotes = $$('.quote', deck), counter = $('.deck__count');
+  let order = quotes.map((_, i) => i);
+  const pad2 = n => String(n).padStart(2, '0');
+  function layout() {
+    order.forEach((qi, k) => {
+      const q = quotes[qi];
+      q.style.zIndex = 10 - k;
+      q.style.transform = `translate3d(0, ${k * 18}px, 0) scale(${1 - k * 0.05}) rotate(${k === 0 ? 0 : (k % 2 ? -2.5 : 2.5)}deg)`;
+      q.style.opacity = k > 2 ? 0 : 1 - k * 0.2;
+      q.setAttribute('aria-hidden', String(k !== 0));
+    });
+    counter.textContent = `${pad2(order[0] + 1)} / ${pad2(quotes.length)}`;
+  }
+  function next(dir = 1, fly = 1) {
+    if (dir > 0) {
+      const front = quotes[order[0]];
+      front.style.transform = `translate3d(${fly * 115}%, -30px, 0) rotate(${fly * 14}deg)`;
+      front.style.opacity = '0';
+      setTimeout(() => {
+        order.push(order.shift());
+        front.style.transition = 'none';
+        layout();
+        void front.offsetWidth;
+        front.style.transition = '';
+      }, RM ? 0 : 380);
+    } else {
+      order.unshift(order.pop());
+      const q = quotes[order[0]];
+      q.style.transition = 'none';
+      q.style.transform = 'translate3d(-115%, -30px, 0) rotate(-14deg)';
+      q.style.opacity = '0';
+      q.style.zIndex = 20;
+      void q.offsetWidth;
+      q.style.transition = '';
+      layout();
+    }
+  }
+  layout();
+  $$('[data-deck]').forEach(b => b.addEventListener('click', () => next(+b.dataset.deck)));
+  let dStart = null, dDx = 0;
+  deck.addEventListener('pointerdown', e => { dStart = e.clientX; dDx = 0; deck.setPointerCapture(e.pointerId); quotes[order[0]].style.transition = 'none'; });
+  deck.addEventListener('pointermove', e => {
+    if (dStart === null) return;
+    dDx = e.clientX - dStart;
+    quotes[order[0]].style.transform = `translate3d(${dDx}px, 0, 0) rotate(${dDx * 0.05}deg)`;
+  });
+  const deckUp = () => {
+    if (dStart === null) return;
+    dStart = null;
+    const front = quotes[order[0]];
+    front.style.transition = '';
+    if (Math.abs(dDx) > 90) next(1, Math.sign(dDx)); else layout();
+  };
+  deck.addEventListener('pointerup', deckUp);
+  deck.addEventListener('pointercancel', deckUp);
+
+  /* ---------- aberto agora? (horário de Santos) ---------- */
+  function spNow() {
+    const parts = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }).formatToParts(new Date());
+    const get = t => parts.find(p => p.type === t).value;
+    const day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(get('weekday'));
+    return { day, h: +get('hour'), m: +get('minute') };
+  }
+  function updateStatus() {
+    const { day, h } = spNow();
+    const open = day !== 1 && h >= 11;
+    let html;
+    if (open) html = '<b>Aberto agora</b> · até 00h';
+    else if (day === 1) html = '<b>Fechado hoje</b> · abre terça às 11h';
+    else html = '<b>Fechado</b> · abre hoje às 11h';
+    $$('[data-status]').forEach(s => {
+      s.classList.toggle('is-open', open);
+      s.classList.toggle('is-closed', !open);
+      s.lastElementChild.innerHTML = html;
+    });
+    $$('.week li').forEach(li => li.classList.toggle('is-today', +li.dataset.day === day));
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  /* ---------- botões magnéticos ---------- */
+  if (FINE && !RM) {
+    $$('.magnetic').forEach(el => {
+      el.addEventListener('pointermove', e => {
+        const r = el.getBoundingClientRect();
+        el.style.translate = `${(e.clientX - r.left - r.width / 2) * 0.22}px ${(e.clientY - r.top - r.height / 2) * 0.32}px`;
+      });
+      el.addEventListener('pointerleave', () => { el.style.translate = ''; });
+    });
+  }
+
+  /* ---------- cursor ---------- */
+  if (FINE && !RM) {
+    root.classList.add('has-cursor');
+    const cur = $('.cursor'), label = $('.cursor__ring span');
+    let x = -100, y = -100, tx = -100, ty = -100;
+    addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; cur.classList.add('is-visible'); });
+    document.addEventListener('pointerleave', () => cur.classList.remove('is-visible'));
+    document.addEventListener('pointerover', e => {
+      const t = e.target.closest('a, button, [data-cursor]');
+      const lab = t && t.closest('[data-cursor]') ? t.closest('[data-cursor]').dataset.cursor : '';
+      cur.classList.toggle('is-hover', !!t && !lab);
+      cur.classList.toggle('has-label', !!lab);
+      if (lab) label.textContent = lab;
+    });
+    (function cloop() {
+      x += (tx - x) * 0.2; y += (ty - y) * 0.2;
+      cur.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      requestAnimationFrame(cloop);
+    })();
+  }
+
+  $('[data-year]').textContent = new Date().getFullYear();
+  addEventListener('load', () => { if (GS) ScrollTrigger.refresh(); });
+})();
+</script>
+</body>
+</html>

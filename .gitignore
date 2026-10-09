@@ -1,0 +1,4 @@
+# configurações locais do editor/pré-visualização
+.claude/
+# pacote gerado para envio, não faz parte do site
+*.zip
