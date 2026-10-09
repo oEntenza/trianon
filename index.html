@@ -473,8 +473,14 @@ html:not(.js) .hero__slide:first-child{opacity:1;transform:none}
 .foot p{margin:18px 0 0;max-width:34ch}
 .foot__word{margin:clamp(60px,8vw,110px) 0 0;font-family:var(--serif);font-weight:500;font-size:clamp(80px,21vw,330px);line-height:.78;letter-spacing:-.03em;text-align:center;white-space:nowrap;color:transparent;-webkit-text-stroke:1px rgba(244,236,220,.22);
   background:linear-gradient(90deg,var(--gold) 0 50%,transparent 50% 100%) 100% 0/200% 100% no-repeat;-webkit-background-clip:text;background-clip:text;user-select:none}
-.foot__bar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}
+.foot__bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}
 .foot__bar a:hover{color:var(--ink)}
+.credit{display:inline-flex;align-items:center;gap:10px}
+.credit__link{display:block;padding:4px 0;border-radius:4px}
+.credit__logo{display:block;height:22px;width:auto;fill:#fff;opacity:.85;transition:opacity .3s}
+.credit__link:hover .credit__logo,.credit__link:focus-visible .credit__logo{opacity:1}
+.credit__link:hover .credit__5a,.credit__link:focus-visible .credit__5a{fill:url(#j5a)}
+.credit__link:hover .credit__5b,.credit__link:focus-visible .credit__5b{fill:url(#j5b)}
 .social{display:flex;gap:10px;margin-top:22px}
 .social a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;transition:background .35s,border-color .35s,color .35s}
 .social a:hover{background:var(--gold);border-color:var(--gold);color:var(--dark-on-gold)}
@@ -1056,6 +1062,23 @@ html:not(.js) .hero__slide:first-child{opacity:1;transform:none}
     <div class="foot__bar">
       <span>© <span data-year>2026</span> Restaurante Trianon · Todos os direitos reservados</span>
       <a href="https://restaurantetrianon.com.br/politica-de-privacidade/" target="_blank" rel="noopener">Política de privacidade</a>
+      <span class="credit">Site desenvolvido por
+        <!-- logo JOTA5 em branco; o "5" ganha o degradê da marca ao passar o mouse -->
+        <a class="credit__link" href="https://jota5.com.br/" target="_blank" rel="noopener" aria-label="JOTA5 (abre em nova aba)">
+        <svg class="credit__logo" viewBox="247 135 506 200" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="j5a" x1="685.77" y1="329.65" x2="685.77" y2="220.29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2af9ff"/><stop offset="1" stop-color="#1565ff"/></linearGradient>
+            <linearGradient id="j5b" x1="674.74" y1="104.27" x2="674.74" y2="316.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2af9ff"/><stop offset="1" stop-color="#1565ff"/></linearGradient>
+          </defs>
+          <path d="M251.57,266.94h32.39c2.84,0,5.15-2.31,5.15-5.15v-116.49c0-1.78,1.44-3.22,3.22-3.22h26.17c1.78,0,3.22,1.44,3.22,3.22v130.65c0,10.66-8.64,19.31-19.31,19.31h-50.84c-1.42,0-2.57-1.15-2.57-2.57v-23.17c0-1.42,1.15-2.57,2.57-2.57Z"/>
+          <path d="M403.78,141.77h-53.42c-10.66,0-19.31,8.64-19.31,19.31v113.92c0,10.66,8.64,19.31,19.31,19.31h53.42c10.66,0,19.31-8.64,19.31-19.31v-113.92c0-10.66-8.64-19.31-19.31-19.31ZM390.27,265.98h-26.39v-95.25h26.39v95.25Z"/>
+          <polygon points="430.17 141.77 430.17 170.73 455.91 170.73 455.91 294.3 488.09 294.3 488.09 170.73 513.84 170.73 513.84 141.77 430.17 141.77"/>
+          <polygon points="501.22 294.3 538.69 142.09 571.3 142.09 609.05 295.26 574.73 295.26 555.13 211.38 536.4 294.3 501.22 294.3"/>
+          <path class="credit__5a" d="M685.52,208.44c-1.2,0-2.39-.01-3.56-.02-.04,0-.07,0-.11,0-1.01,0-1.99.04-2.96.11-.2.01-.4.02-.59.04-1.09.09-2.15.24-3.19.41-17.05,9.17-29.08,28.99-37.45,50.28l13.5-12.58c5.04-.67,10.5-1.03,16.13-1.03,18.48,0,24.81,6.52,26.16,16.3,1.57,11.41-5.18,19.57-21.76,19.57s-28.48-7.23-37.15-13.78c-7.4,21.39-11.37,43.02-13.28,55.84l-.71,9.5,9.53-13.24c12,5.48,27.69,10.06,46.91,10.06,49.46,0,79.39-23.37,73.21-68.21-4.34-31.48-35.26-52.47-64.67-53.23Z"/>
+          <path class="credit__5b" d="M621.31,231.51l-.02.3c18.6-20.01,47.74-27.2,53.03-28.37l1.5-20.04h59.24l-.7-46.47h-107.07l-5.35,84.49c-4.66,8.81-7.55,19.22-7.55,19.22,2.25-3.79,4.76-6.86,6.91-9.15Z"/>
+        </svg>
+        </a>
+      </span>
     </div>
   </div>
 </footer>
